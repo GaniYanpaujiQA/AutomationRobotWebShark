@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66d7ca0c-1a00-449e-9c07-f5c7df787844" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_admin_test.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_approver_test.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_requestor_test.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_newCart_transaction_admin_test.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_newCart_transaction_approver_test.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_newCart_transaction_parent_child_test.robot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_newCart_transaction_requestor_test.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_pages.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/loginEmail_pages.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/loginPassword_pages.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/home_test.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/loginEmail_test.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/loginPassword_test.robot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/output.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-9.png" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="submit_editOpty_addToCart_alreadyCart_transaction_admin_test.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_alreadyCart_transaction_admin_test.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testAll_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="e#0#731#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daftarTransaksi_semuaPesanan_pages.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PageObject/daftarTransaksi_semuaPesanan_pages.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resources.robot" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="submit_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="62" column="2" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="submit_editOpty_addToCart_alreadyCart_transaction_approver_test.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_alreadyCart_transaction_approver_test.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-706" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testAll_editOpty_addToCart_alreadyCart_transaction_approver_test.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_approver_test.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-640">
+              <folding>
+                <element signature="e#0#659#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testAll_editOpty_addToCart_alreadyCart_transaction_admin_test.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_admin_test.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>str</find>
+      <find>keyword.py</find>
+      <find />
+      <find>LOGIN_BUTTON_CMS</find>
+      <find>decode</find>
+      <find>keyword</find>
+      <find>keyword/</find>
+      <find>/keyword/</find>
+      <find>//a[@href='http://shark-cf-development.bhinnekalocal.com/account/transaction'</find>
+      <find>LIST_FIRST</find>
+      <find>keywPageObjectord/</find>
+      <find>PILIHUNITBISNIS_CLICKDROPDOWN</find>
+      <find>select</find>
+      <find>PT_PARENT</find>
+      <find>keyPageObjectword/</find>
+      <find>xpath=(//div/div[@class='list-group bt-list-group bt-b2b__list list-transaction']/a[@class='list-group-item'])[1]</find>
+      <find>And</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/keyword/src/getSplit.py" />
+        <option value="$PROJECT_DIR$/keyword/src/testHeadless.robot" />
+        <option value="$PROJECT_DIR$/keyword/src/split.py" />
+        <option value="$PROJECT_DIR$/keyword/daftarTransaksi_semuaPesanan_pages.robot" />
+        <option value="$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/testAll_editOpty_addToCart_alreadyCart_transaction_approver_test.robot" />
+        <option value="$PROJECT_DIR$/keyword/src/GetLoginCMS.py" />
+        <option value="$PROJECT_DIR$/keyword/src/getDtTest.robot" />
+        <option value="$PROJECT_DIR$/keyword/src/testImpor.py" />
+        <option value="$PROJECT_DIR$/keyword/cms/loginCMS_pages.robot" />
+        <option value="$PROJECT_DIR$/keyword/detailTransaksi_pages.robot" />
+        <option value="$PROJECT_DIR$/PageObject/daftarTransaksi_semuaPesanan_pages.robot" />
+        <option value="$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/editOpty_addToCart_alreadyCart_transaction_approver_test.robot" />
+        <option value="$PROJECT_DIR$/testCase/editOpty_addToCart_newCart/submit_editOpty_addToCart_newCart_transaction_parent_child_test.robot" />
+        <option value="$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot" />
+        <option value="$PROJECT_DIR$/testCase/editOpty_addToCart_newCart/editOpty_addToCart_newCart_transaction_parent_child_test.robot" />
+        <option value="$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_newCart_transaction_parent_child_test.robot" />
+        <option value="$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_newCart_transaction_requestor_test.robot" />
+        <option value="$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/testAll_editOpty_addToCart_alreadyCart_transaction_admin_test.robot" />
+        <option value="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_admin_test.robot" />
+        <option value="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot" />
+        <option value="$PROJECT_DIR$/resources.robot" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SharkWEB Kebutuhan Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SharkWEB Kebutuhan Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SharkWEB Kebutuhan Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SharkWEB Kebutuhan Test" type="462c0819:PsiDirectoryNode" />
+              <item name="testCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SharkWEB Kebutuhan Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SharkWEB Kebutuhan Test" type="462c0819:PsiDirectoryNode" />
+              <item name="testCase" type="462c0819:PsiDirectoryNode" />
+              <item name="testingEditOpty" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testCase/testAll" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.testImpor">
+    <configuration name="getSplit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SharkWEB" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keyword/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keyword/src/getSplit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="testImpor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="SharkWEB" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keyword/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keyword/src/testImpor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.getSplit" />
+      <item itemvalue="Python.testImpor" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.testImpor" />
+        <item itemvalue="Python.getSplit" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66d7ca0c-1a00-449e-9c07-f5c7df787844" name="Default" comment="" />
+      <created>1552361255662</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552361255662</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5034722" side_tool="true" visible="true" weight="0.35961273" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49930555" weight="0.32918397" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4965278" visible="true" weight="0.35961273" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.43125" />
+      <window_info anchor="right" id="R Packages" order="4" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39972338" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint suspend="NONE" type="python-exception">
+          <properties exception="BaseException" />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/keyword/src/getSplit.py" />
+    <entry file="file://$PROJECT_DIR$/keyword/src/GetLoginCMS.py" />
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_newCart/testAll_editOpty_addToCart_newCart_transaction_admin_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_newCart/editOpty_addToCart_newCart_transaction_approver_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-893" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/detailProduct_by_SearchSKU_test.robot">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_newCart/submit_editOpty_addToCart_newCart_transaction_requestor_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1162" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/anakPerusahaan_test.robot">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_newCart/editOpty_addToCart_newCart_transaction_admin_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/transaction_parent_child_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keyword/cms/loginCMS_pages.robot" />
+    <entry file="file://$PROJECT_DIR$/testCase/transaction_admin_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keyword/detailTransaksi_pages.robot" />
+    <entry file="file://$PROJECT_DIR$/keyword/home_pages.robot" />
+    <entry file="file://$PROJECT_DIR$/keyword/laporan_laporantransaksi_pages.robot" />
+    <entry file="file://$PROJECT_DIR$/testCase/transaction_approver_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1259">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keyword/laporan_laporanBudget_pages.robot" />
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_newCart/submit_editOpty_addToCart_newCart_transaction_admin_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/pengaturan_unitBisnis_daftarDepartment_historyBudget_ubahBudget_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testLoop.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageObject/src/venv/bin/pip3.7" />
+    <entry file="file://$PROJECT_DIR$/testCase/detailTransaksi_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/editOpty_addToCart_alreadyCart_transaction_admin_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/submit_editOpty_addToCart_alreadyCart_transaction_requestor_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-259" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/submit_editOpty_addToCart_alreadyCart_transaction_approver_test.robot">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/submit_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/editOpty_addToCart_alreadyCart_transaction_approver_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageObject/detail_product_pages.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_newCart_transaction_admin_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1265">
+          <caret line="99" column="69" selection-start-line="99" selection-start-column="69" selection-end-line="99" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_alreadyCart_transaction_requestor_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_newCart/submit_editOpty_addToCart_newCart_transaction_parent_child_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_newCart_transaction_approver_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_newCart/editOpty_addToCart_newCart_transaction_parent_child_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_newCart_transaction_parent_child_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_newCart_transaction_requestor_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="35" selection-start-line="35" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/transaksi_semua_pesanan_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/testAll_editOpty_addToCart_alreadyCart_transaction_admin_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/testAll_editOpty_addToCart_alreadyCart_transaction_approver_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/testAll_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#731#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_alreadyCart/testAll_editOpty_addToCart_alreadyCart_transaction_requestor_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_newCart_transaction_admin_test.robot">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/editOpty_addToCart_newCart/testAll_editOpty_addToCart_newCart_transaction_requestor_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1182" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/transaksi_pesanan_berjalan_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_newCart_transaction_parent_child_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <folding>
+            <element signature="e#0#731#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_admin_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_alreadyCart_transaction_admin_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_approver_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-640">
+          <folding>
+            <element signature="e#0#659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_alreadyCart_transaction_approver_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-706" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testingEditOpty/submit_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="62" column="2" selection-start-line="62" selection-start-column="2" selection-end-line="62" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#0#731#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PageObject/daftarTransaksi_semuaPesanan_pages.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
