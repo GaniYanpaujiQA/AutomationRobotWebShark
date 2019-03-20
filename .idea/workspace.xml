@@ -1,51 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66d7ca0c-1a00-449e-9c07-f5c7df787844" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_admin_test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_approver_test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_parent_child_test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_requestor_test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_newCart_transaction_admin_test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_newCart_transaction_approver_test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_newCart_transaction_parent_child_test.robot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCase/testAll/testAll_editOpty_addToCart_newCart_transaction_requestor_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home_pages.robot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/loginEmail_pages.robot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/loginPassword_pages.robot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/home_test.robot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/log.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/loginEmail_test.robot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/loginPassword_test.robot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/output.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/selenium-screenshot-9.png" beforeDir="false" />
-    </list>
+    <list default="true" id="66d7ca0c-1a00-449e-9c07-f5c7df787844" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
