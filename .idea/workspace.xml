@@ -1,64 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66d7ca0c-1a00-449e-9c07-f5c7df787844" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SharkWEB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SharkWEB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/apiCollection/getQuotationDetail_collection.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/apiCollection/getQuotationDetail_collection.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/cms/homeCMS_pages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/cms/homeCMS_pages.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/cms/loginCMS_pages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/cms/loginCMS_pages.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/cms/opportunities_pages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/cms/opportunities_pages.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/cms/quotation_pages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/cms/quotation_pages.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/daftarTransaksi_semuaPesanan_pages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/daftarTransaksi_semuaPesanan_pages.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/daftartransaksi_bantuansales_pages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/daftartransaksi_bantuansales_pages.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/loginPassword_pages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/loginPassword_pages.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/menu_pages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/menu_pages.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/pengaturan/unitBisnis/daftarDepartment_historyBudget_pages.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/pengaturan/unitBisnis/daftarDepartment_historyBudget_pages.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/result/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/result/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/result/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-11.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-12.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-13.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-14.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-14.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-15.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-16.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-17.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-17.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-18.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-18.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/selenium-screenshot-9.png" beforeDir="false" afterPath="$PROJECT_DIR$/result/selenium-screenshot-9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/Result/log.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/Result/output.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/Result/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/apiTest/getQuotationDetail_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite/apiTest/getQuotationDetail_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/apiTest/testjson.json" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite/apiTest/testjson.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_admin_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite/testAll/testAll_editOpty_addToCart_alreadyCart_transaction_admin_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/testAllBeliDenganBantuan/testAll_BeliDenganBantuan_transaction_admin_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite/testAllBeliDenganBantuan/testAll_BeliDenganBantuan_transaction_admin_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/testAllBeliDenganBantuan/testAll_BeliDenganBantuan_transaction_approver_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite/testAllBeliDenganBantuan/testAll_BeliDenganBantuan_transaction_approver_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/testAllBeliDenganBantuan/testAll_BeliDenganBantuan_transaction_parent_child_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite/testAllBeliDenganBantuan/testAll_BeliDenganBantuan_transaction_parent_child_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/testAllBeliDenganBantuan/testAll_BeliDenganBantuan_transaction_requestor_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite/testAllBeliDenganBantuan/testAll_BeliDenganBantuan_transaction_requestor_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/transaction_admin_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite/transaction_admin_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/transaction_parent_child_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite/transaction_parent_child_test.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSuite/transaksi_bantuan_sales_test.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testSuite/transaksi_bantuan_sales_test.robot" afterDir="false" />
-    </list>
+    <list default="true" id="66d7ca0c-1a00-449e-9c07-f5c7df787844" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -321,7 +264,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5104167" side_tool="true" weight="0.3582296" />
