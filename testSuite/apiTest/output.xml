@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190327 20:09:18.194" generator="Robot 3.0.4 (Python 2.7.10 on darwin)">
+<suite source="/Users/ganiyanpauji/Documents/SharkWEB Kebutuhan Test/testSuite/apiTest/latihan.robot" id="s1" name="Latihan">
+<test id="s1-t1" name="Opty Num">
+<kw name="Get Opty Num From Backend">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${departmentName}' == '-'</arg>
+<arg>Log To Console</arg>
+<arg>Department Not Found</arg>
+<arg>ELSE</arg>
+<arg>Warga Pintar</arg>
+</arguments>
+<kw name="Warga Pintar">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Cebong Else</arg>
+</arguments>
+<status status="PASS" endtime="20190327 20:09:18.221" starttime="20190327 20:09:18.221"></status>
+</kw>
+<status status="PASS" endtime="20190327 20:09:18.222" starttime="20190327 20:09:18.221"></status>
+</kw>
+<status status="PASS" endtime="20190327 20:09:18.222" starttime="20190327 20:09:18.220"></status>
+</kw>
+<status status="PASS" endtime="20190327 20:09:18.222" starttime="20190327 20:09:18.220"></status>
+</kw>
+<status status="PASS" endtime="20190327 20:09:18.222" critical="yes" starttime="20190327 20:09:18.219"></status>
+</test>
+<status status="PASS" endtime="20190327 20:09:18.222" starttime="20190327 20:09:18.197"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Latihan" pass="1">Latihan</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.0 on darwin)" generated="20190326 15:54:04.284" rpa="false">
+<suite id="s1" name="beliDenganBantuan test" source="/Users/ganiyanpauji/Documents/SharkWEB Kebutuhan Test/testSuite/beliDenganBantuan_test.robot">
+<test id="s1-t1" name="Open Beli Dengan Bantuan Test">
+<kw name="Open Main Page Using Chrome Browser" library="resources" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${MAIN_PAGE}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190326 15:54:04.813" level="INFO">Opening browser 'chrome' to base url 'http://shark-cf-development.bhinnekalocal.com'.</msg>
+<status status="PASS" starttime="20190326 15:54:04.813" endtime="20190326 15:54:11.775"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:04.812" endtime="20190326 15:54:11.775"></status>
+</kw>
+<kw name="Open Beli Dengan Bantuan">
+<arguments>
+<arg>${SEARCHDATA}</arg>
+</arguments>
+<kw name="GIVEN Home Page To Login Email Page" library="home_pages">
+<kw name="Home Page Already Opened" library="home_pages">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${LOGIN_BUTTON_CF}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:11.778" endtime="20190326 15:54:11.816"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:11.777" endtime="20190326 15:54:11.817"></status>
+</kw>
+<kw name="Klik Login Button" library="home_pages">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_BUTTON_CF}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:11.818" level="INFO">Clicking element '//div[@class='container']/div[@class='bt-navbar__login']/a[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20190326 15:54:11.817" endtime="20190326 15:54:12.751"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:11.817" endtime="20190326 15:54:12.751"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:11.777" endtime="20190326 15:54:12.751"></status>
+</kw>
+<kw name="And Login Account Success" library="login_pages">
+<kw name="Login Email Page Opened" library="login_pages">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${INPUT_EMAIL}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:12.752" endtime="20190326 15:54:12.800"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${BUTTON_LANJUT}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:12.800" endtime="20190326 15:54:12.825"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:12.752" endtime="20190326 15:54:12.825"></status>
+</kw>
+<kw name="Input Email" library="login_pages">
+<arguments>
+<arg>a.parentchildrequestor@grr.la</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${INPUT_EMAIL}</arg>
+<arg>${user_name}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:12.826" level="INFO">Typing text 'a.parentchildrequestor@grr.la' into text field '//input[@name='email']'.</msg>
+<status status="PASS" starttime="20190326 15:54:12.826" endtime="20190326 15:54:13.099"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_LANJUT}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:13.100" level="INFO">Clicking element '//button'.</msg>
+<status status="PASS" starttime="20190326 15:54:13.099" endtime="20190326 15:54:13.563"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:12.825" endtime="20190326 15:54:13.564"></status>
+</kw>
+<kw name="Login Password Page Will Be Success" library="login_pages">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${INPUT_PASSWORD}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:13.565" endtime="20190326 15:54:13.601"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${BUTTON_MASUK}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:13.601" endtime="20190326 15:54:13.626"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:13.564" endtime="20190326 15:54:13.626"></status>
+</kw>
+<kw name="Input Password Field" library="login_pages">
+<arguments>
+<arg>Bhinneka321</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${INPUT_PASSWORD}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:13.627" level="INFO">Typing text 'Bhinneka321' into text field '//input[@name='password']'.</msg>
+<status status="PASS" starttime="20190326 15:54:13.627" endtime="20190326 15:54:13.776"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUTTON_MASUK}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:13.777" level="INFO">Clicking element '//div[5]/button'.</msg>
+<status status="PASS" starttime="20190326 15:54:13.776" endtime="20190326 15:54:17.489"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:13.626" endtime="20190326 15:54:17.490"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:12.752" endtime="20190326 15:54:17.490"></status>
+</kw>
+<kw name="And Klik Tab Semua Pesanan" library="daftarTransaksi_semuaPesanan_pages">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${TAB_SEMUAPESANAN}</arg>
+<arg>timeout=15</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:17.491" endtime="20190326 15:54:17.713"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${TAB_SEMUAPESANAN}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:17.713" level="INFO">Clicking element '//a[@href='http://shark-cf-development.bhinnekalocal.com/account/transaction']'.</msg>
+<status status="PASS" starttime="20190326 15:54:17.713" endtime="20190326 15:54:21.172"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:17.490" endtime="20190326 15:54:21.172"></status>
+</kw>
+<kw name="And Click Beli Dengan Bantuan Button" library="daftarTransaksi_semuaPesanan_pages">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${BELIDENGANBANTUAN_BUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:21.173" endtime="20190326 15:54:21.207"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${BELIDENGANBANTUAN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:21.207" level="INFO">Clicking element 'id=btnAssistBuy'.</msg>
+<status status="PASS" starttime="20190326 15:54:21.207" endtime="20190326 15:54:21.293"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:21.173" endtime="20190326 15:54:21.293"></status>
+</kw>
+<kw name="WHEN Input Nama Order Text Field From Pop Up Pembelian dengan bantuan Sales" library="daftarTransaksi_semuaPesanan_pages">
+<arguments>
+<arg>karjo</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${NAMAORDER_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:21.294" endtime="20190326 15:54:21.530"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${NAMAORDER_TEXTFIELD}</arg>
+<arg>${orderName}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:21.531" level="INFO">Typing text 'karjo' into text field 'id=orderName'.</msg>
+<status status="PASS" starttime="20190326 15:54:21.530" endtime="20190326 15:54:21.773"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:21.293" endtime="20190326 15:54:21.773"></status>
+</kw>
+<kw name="And Select Department From Pop Up Pembelian dengan bantuan Sales" library="daftarTransaksi_semuaPesanan_pages">
+<arguments>
+<arg>CHILDREQUESTOR</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SELECT_DEPARTMENT_DROPLIST}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:21.774" endtime="20190326 15:54:21.805"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${SELECT_DEPARTMENT_DROPLIST}</arg>
+<arg>${departmentName}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:21.806" level="INFO">Selecting options from selection list 'id=departmentId' by label CHILDREQUESTOR.</msg>
+<status status="PASS" starttime="20190326 15:54:21.805" endtime="20190326 15:54:21.897"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:21.773" endtime="20190326 15:54:21.898"></status>
+</kw>
+<kw name="And Input Pesan Untuk Sales Text Field From Pop Up Pembelian dengan bantuan Sales" library="daftarTransaksi_semuaPesanan_pages">
+<arguments>
+<arg>${SEARCHDATA}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${PESANUNTUKSALES_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:21.898" endtime="20190326 15:54:21.929"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PESANUNTUKSALES_TEXTFIELD}</arg>
+<arg>${pesanSales}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:21.930" level="INFO">Typing text 'b1@grr.la' into text field 'id=orderNote'.</msg>
+<status status="PASS" starttime="20190326 15:54:21.929" endtime="20190326 15:54:22.083"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:21.898" endtime="20190326 15:54:22.083"></status>
+</kw>
+<kw name="And Click Submit Dengan Bantuan Button From Pop Up Pembelian dengan bantuan Sales" library="daftarTransaksi_semuaPesanan_pages">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${SUBMIT_BUTTON_ASSIS}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:22.084" endtime="20190326 15:54:22.114"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SUBMIT_BUTTON_ASSIS}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:22.114" level="INFO">Clicking element 'id=btnAssistSubmit'.</msg>
+<status status="PASS" starttime="20190326 15:54:22.114" endtime="20190326 15:54:22.183"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:22.083" endtime="20190326 15:54:22.183"></status>
+</kw>
+<kw name="THEN Click Kembali Ke Dashboard Button From Pop Up Permintaan bantuan diproses" library="daftarTransaksi_semuaPesanan_pages">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${KEMBALIKEDASHBOARD_BUTTON}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:22.185" endtime="20190326 15:54:24.054"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${KEMBALIKEDASHBOARD_BUTTON}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:24.054" level="INFO">Clicking element '//button[@class='btn btn-default' and contains(text(),'Kembali Ke Dashboard')]'.</msg>
+<status status="PASS" starttime="20190326 15:54:24.054" endtime="20190326 15:54:28.477"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:22.184" endtime="20190326 15:54:28.477"></status>
+</kw>
+<kw name="And Klik Tab Bantuan Sales" library="daftartransaksi_bantuansales_pages">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20190326 15:54:30.481" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20190326 15:54:28.479" endtime="20190326 15:54:30.482"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${TAB_PESANANBERJALAN}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:30.483" level="INFO">Clicking element '//a[@href='http://shark-cf-development.bhinnekalocal.com/account/transaction/assistedOrder']'.</msg>
+<status status="PASS" starttime="20190326 15:54:30.482" endtime="20190326 15:54:32.744"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:28.478" endtime="20190326 15:54:32.744"></status>
+</kw>
+<kw name="And Get Request Number Bantuan Sales Tab" library="daftartransaksi_bantuansales_pages">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0,400)</arg>
+</arguments>
+<msg timestamp="20190326 15:54:32.745" level="INFO">Executing JavaScript:
+window.scrollTo(0,400)
+Without any arguments.</msg>
+<status status="PASS" starttime="20190326 15:54:32.744" endtime="20190326 15:54:32.750"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20190326 15:54:34.751" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20190326 15:54:32.750" endtime="20190326 15:54:34.752"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${GET_REQ_NUMBER_LABEL}</arg>
+</arguments>
+<assign>
+<var>${request_number}</var>
+</assign>
+<msg timestamp="20190326 15:54:34.789" level="INFO">${request_number} = RQ000000000000000276</msg>
+<status status="PASS" starttime="20190326 15:54:34.752" endtime="20190326 15:54:34.789"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${request_number}</arg>
+<arg>${request_number}</arg>
+</arguments>
+<msg timestamp="20190326 15:54:34.790" level="INFO">${request_number} = RQ000000000000000276</msg>
+<status status="PASS" starttime="20190326 15:54:34.789" endtime="20190326 15:54:34.790"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${request_number}</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:34.790" endtime="20190326 15:54:34.790"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${GET_REQ_NUMBER_LABEL}</arg>
+<arg>timeout=20</arg>
+</arguments>
+<status status="PASS" starttime="20190326 15:54:34.791" endtime="20190326 15:54:34.816"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:32.744" endtime="20190326 15:54:34.816"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:11.776" endtime="20190326 15:54:34.817"></status>
+</kw>
+<status status="PASS" starttime="20190326 15:54:04.810" endtime="20190326 15:54:34.817" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190326 15:54:04.288" endtime="20190326 15:54:34.819"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="beliDenganBantuan test">beliDenganBantuan test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190326 15:54:04.756" level="ERROR">Error in file '/Users/ganiyanpauji/Documents/SharkWEB Kebutuhan Test/resources.robot': Importing test library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/ganiyanpauji/PycharmProjects/untitled/venv/bin
+  /usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python37.zip
+  /usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7
+  /usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload
+  /Users/ganiyanpauji/PycharmProjects/untitled/venv/lib/python3.7/site-packages
+  /Users/ganiyanpauji/PycharmProjects/untitled/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg</msg>
+<msg timestamp="20190326 15:54:04.757" level="ERROR">Error in file '/Users/ganiyanpauji/Documents/SharkWEB Kebutuhan Test/resources.robot': Importing test library 'JSONLibrary' failed: ModuleNotFoundError: No module named 'JSONLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /Users/ganiyanpauji/PycharmProjects/untitled/venv/bin
+  /usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python37.zip
+  /usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7
+  /usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload
+  /Users/ganiyanpauji/PycharmProjects/untitled/venv/lib/python3.7/site-packages
+  /Users/ganiyanpauji/PycharmProjects/untitled/venv/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg</msg>
+</errors>
+</robot>
