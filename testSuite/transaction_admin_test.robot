@@ -76,7 +76,7 @@ Send Quotation From CMS
        And Login Account CMS Success
        And Home Pages CMS Opened
        And Click Menu Opportunities
-       And Open Quotation Pages From Opportunities   ${opty_number}               ${SELECTALL}
+       And Open Quotation Pages From Opportunities       ${opty_number}               ${SELECTALL}
        And Open Quotation
        WHEN Click Button Send Quatation
        And Pop Up Send Quatation Input Notes     ${TEXTAREA}

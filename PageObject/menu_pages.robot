@@ -13,7 +13,7 @@ ${MENU_PENGATURANPERUSAHAANINDUK}             //a[@class='list-group-item ' and 
 # ${MENU_UNITBISNIS}                   //a[@class='list-group-item' and contains(text(),'Unit Bisnis')]
 # ${MENU_DAFTARPENGGUNA}               //a[@class='list-group-item' and contains(text(),'Daftar Pengguna')]
 # ${MENU_ALAMAT}                       //a[@class='list-group-item' and contains(text(),'Alamat')]
-${MENU_PENGATURANANAKPERUSAHAAN}     //a[@class='list-group-item ' and contains(text(),'Pengaturan Anak Perusahaan')]
+${MENU_PENGATURANANAKPERUSAHAAN}      //a[@class='list-group-item ' and contains(text(),'Pengaturan Anak Perusahaan')]
 # ${MENU_AKUNSAYA}                     //a[@class='list-group-item' and contains(text(),'Akun Saya')]
 
 *** Keywords ***

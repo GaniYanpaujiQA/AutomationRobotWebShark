@@ -2,9 +2,10 @@
 Library       SeleniumLibrary
 
 *** Variables ***
-${TAB_SEMUAPESANAN}         //a[@href='http://shark-cf-staging.bhinnekalocal.com/account/transaction']
-#//a[@href='http://shark-cf-staging.bhinnekalocal.com/account/transaction']
+${TAB_SEMUAPESANAN}      //a[@href='http://shark-cf-development.bhinnekalocal.com/account/transaction']
 #//a[@href='http://shark-cf-development.bhinnekalocal.com/account/transaction']
+#//a[@href='http://shark-cf-staging.bhinnekalocal.com/account/transaction']
+
 
 ${SEARCH_TEXTBOX}                   //input[@id='search-transaction' and @name='search']
 ${DROPLIST_STATUS}                  //button[@data-id='ddlOptyStatus']
@@ -24,7 +25,16 @@ ${LIST_FIRST}                        xpath=(//div/div[@class='list-group bt-list
 # ${MENU_PENGATURANANAKPERUSAHAAN}     //a[@class='list-group-item' and contains(text(),'Pengaturan Anak Perusahaan')]
 # ${MENU_AKUNSAYA}                     //a[@class='list-group-item' and contains(text(),'Akun Saya')]
 ${NAMAOPTY_LABEL}                             //a/div[@class='list-group-item-heading']/div[@class='list-heading-text']/h4[@class='bt-typo-displaysmall']
+${BELIDENGANBANTUAN_BUTTON}           id=btnAssistBuy
 ${OPTYNUMBER}
+   # Pembelian dengan bantuan Sales
+${NAMAORDER_TEXTFIELD}               id=orderName
+${PESANUNTUKSALES_TEXTFIELD}         id=orderNote
+${SUBMIT_BUTTON_ASSIS}                     id=btnAssistSubmit
+    # Pop Up Permintaan bantuan diproses
+${KEMBALIKEDASHBOARD_BUTTON}        //button[@class='btn btn-default' and contains(text(),'Kembali Ke Dashboard')]
+
+${SELECT_DEPARTMENT_DROPLIST}       id=departmentId
 *** Keywords ***
 
 Klik Tab Semua Pesanan
@@ -106,10 +116,8 @@ List First Transaction Selected
       Execute JavaScript    window.scrollTo(0,300)
       Wait Until Page Contains Element    ${LIST_FIRST}    timeout=25
       Wait Until Element Is Visible       ${LIST_FIRST}
-      Click Element                        ${LIST_FIRST}
+      Click Element                       ${LIST_FIRST}
 
-
-Open Transaction By Data
 
 
 Compare Opty Name
@@ -118,3 +126,42 @@ Compare Opty Name
     ${get_text_nama_opty}      Get Text    ${NAMAOPTY_LABEL}
     Should Be Equal As Strings            ${optyName}          ${get_text_nama_opty}
     Log To Console    Opty by Get Text =${get_text_nama_opty} and Opty By Name =${optyName}
+
+
+Click Beli Dengan Bantuan Button
+    Wait Until Element Is Visible     ${BELIDENGANBANTUAN_BUTTON}
+    Click Element                     ${BELIDENGANBANTUAN_BUTTON}
+
+
+   # Pop Up Pembelian dengan bantuan Sales
+Input Nama Order Text Field From Pop Up Pembelian dengan bantuan Sales
+    [Arguments]                 ${orderName}
+    Wait Until Element Is Visible     ${NAMAORDER_TEXTFIELD}
+    Input Text                        ${NAMAORDER_TEXTFIELD}             ${orderName}
+
+Input Pesan Untuk Sales Text Field From Pop Up Pembelian dengan bantuan Sales
+    [Arguments]                 ${pesanSales}
+    Wait Until Element Is Visible     ${PESANUNTUKSALES_TEXTFIELD}
+    Input Text                        ${PESANUNTUKSALES_TEXTFIELD}           ${pesanSales}
+
+Click Submit Dengan Bantuan Button From Pop Up Pembelian dengan bantuan Sales
+    Wait Until Element Is Visible     ${SUBMIT_BUTTON_ASSIS}
+    Click Element                     ${SUBMIT_BUTTON_ASSIS}
+
+Select Department From Pop Up Pembelian dengan bantuan Sales
+    [Arguments]                 ${departmentName}
+    Run Keyword If       '${departmentName}' == '-'
+    ...     Log To Console     Department Not Found
+    ...     ELSE
+    ...     Select Department Droplist                  ${departmentName}
+
+Select Department Droplist
+    [Arguments]                 ${departmentName}
+    Wait Until Element Is Visible     ${SELECT_DEPARTMENT_DROPLIST}
+    Select From List By Label         ${SELECT_DEPARTMENT_DROPLIST}          ${departmentName}
+
+    # Pop Up Permintaan bantuan diproses
+Click Kembali Ke Dashboard Button From Pop Up Permintaan bantuan diproses
+    Sleep   2
+    Wait Until Element Is Visible     ${KEMBALIKEDASHBOARD_BUTTON}                  timeout=20
+    Click Element                     ${KEMBALIKEDASHBOARD_BUTTON}

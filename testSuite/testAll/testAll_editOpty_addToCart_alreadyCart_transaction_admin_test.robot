@@ -63,7 +63,7 @@ Create Transaction Get Opty
          Click Hyperlink Kembali
          Klik Tab Semua Pesanan
          Input Text Search Field Tab Semua Pesanan     ${opty_number}
-         Compare Opty Name    ${OPTYNAME}      
+         Compare Opty Name    ${OPTYNAME}
          Close Browser
 
 
@@ -84,16 +84,16 @@ Send Quotation From CMS
 Buy Product From CF
       [Arguments]               ${EMAIL_REQUESTOR}      ${PASSWORD}            ${TEXTAREA}
       Open Main Page Using Chrome Browser
-       Home Page To Login Email Page
-       Login Account Requestor Success      ${EMAIL_REQUESTOR}      ${PASSWORD}
-       Click Button Menu Transaksi
-       Klik Tab Semua Pesanan
-       Input Text Search Field Tab Semua Pesanan     ${opty_number}
-       List First Transaction Selected
+      Home Page To Login Email Page
+      Login Account Requestor Success      ${EMAIL_REQUESTOR}      ${PASSWORD}
+      Click Button Menu Transaksi
+      Klik Tab Semua Pesanan
+      Input Text Search Field Tab Semua Pesanan     ${opty_number}
+      List First Transaction Selected
       Detail Transaksi Opened
-       Click Beli Button From CF
-       Input Tambahkan Catatan Nego Field       ${TEXTAREA}
-       Click Beli Button From CF From Pop Up Order Buy
+      Click Beli Button From CF
+      Input Tambahkan Catatan Nego Field       ${TEXTAREA}
+      Click Beli Button From CF From Pop Up Order Buy
       Status Approval requestor
       Close Browser
 

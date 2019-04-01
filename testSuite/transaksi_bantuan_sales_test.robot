@@ -30,7 +30,7 @@ Page Transaksi Bantuan Sales Already Opened
         Login Email Page To Login Password Page
         Login Password
 
- Click Menu Transaksi Bantuan Sales
+Click Menu Transaksi Bantuan Sales
         Menu Profil Already Opened
         Klik Button Menu Transaksi
 

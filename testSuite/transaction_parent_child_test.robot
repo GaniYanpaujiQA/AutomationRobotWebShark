@@ -44,7 +44,7 @@ Send Quotation From CMS Test
 Buy Product From CF Test
     [Timeout]     5 minute
     [Template]    Buy Product From CF
-    [Teardown]    Close Browser
+#    [Teardown]    Close Browser
     # email requestor        password          textArea               Company name
     ${EMAIL_REQUESTOR}      ${PASSWORD}       ${TEXTAREA}             ${PILIHPERUSAHAAN}
 

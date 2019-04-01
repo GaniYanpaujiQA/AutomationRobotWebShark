@@ -2,7 +2,7 @@
 Library       SeleniumLibrary
 
 *** Variables ***
-${TAB_HISTORIBUDGET}                id=historiBudgetTab
+${TAB_HISTORIBUDGET}                id=historiBudgetTab AND REgister
 ${SEARCH_TEXTBOX}                   name=search
 ${PICKLIST_JANGKAWAKTU}             id=dateFilter
 ${STARDATE_TEXTBOX}                 //input[@name='daterangepicker_start']
