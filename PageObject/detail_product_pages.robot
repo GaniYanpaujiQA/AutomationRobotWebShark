@@ -37,6 +37,7 @@ Select Tipe Unit Bisnis
     Sleep    2
     Click Element                    ${PILIHUNITBISNIS_DROPLIST}
     Input Text                       ${PILIHUNITBISNIS_TEXTBOX}         ${unitBisnis}
+    Wait Until Keyword Succeeds      50 seconds    0 min 0 sec 1 ms      Wait Until Element Is Visible    ${PILIHUNITBISNIS_CLICKDROPDOWN}
     Click Element                    ${PILIHUNITBISNIS_CLICKDROPDOWN}
     Wait Until Element Is Visible    ${PILIHKERANJANG_HYPERLINK}
 
@@ -108,5 +109,6 @@ Select Pilih Perusahaan Field
     Sleep    2
     Click Element                    ${PILIHPERUSAHAAN_DROPLIS}
     Input Text                       ${PILIHUNITBISNIS_TEXTBOX}         ${pilih_perusahaan}
+    Wait Until Keyword Succeeds      50 seconds    0 min 0 sec 1 ms      Wait Until Element Is Visible    ${PILIHUNITBISNIS_CLICKDROPDOWN}
     Click Element                    ${PILIHUNITBISNIS_CLICKDROPDOWN}
     Wait Until Element Is Visible    ${PILIHKERANJANG_HYPERLINK}

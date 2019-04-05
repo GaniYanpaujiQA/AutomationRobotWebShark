@@ -2,8 +2,6 @@
 Library       SeleniumLibrary
 
 *** Variables ***
-${TAB_PESANANBERJALAN}              //a[@href='http://shark-cf-development.bhinnekalocal.com/account/transaction/assistedOrder']
-#//a[@href='http://shark-cf-staging.bhinnekalocal.com/account/transaction/assistedOrder']
 ${SEARCH_TEXTBOX}                   //input[@id='search-transaction']
 ${DROPLIST_STATUS}                  //button[@data-id='ddlAssistedStatus']
 ${TEXTBOX_STATUS }                  //input[@type='text' and @class='form-control' and @aria-label='Search']

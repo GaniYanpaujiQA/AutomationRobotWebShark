@@ -16,8 +16,9 @@ ${SIGNIN_BUTTON}                    id=idSIButton9
 *** Keywords ***
 Home Pages CMS Opened
     Sleep    5
-    Wait Until Element Is Visible     ${QUOTATIONS_MENU}         timeout=30
-    Wait Until Element Is Visible     ${OPPORTUNITIES_MENU}         timeout=30
+    Wait Until Keyword Succeeds     50 seconds    0 min 0 sec 1 ms      Wait Until Element Is Visible    ${QUOTATIONS_MENU}
+    Wait Until Keyword Succeeds     50 seconds    0 min 0 sec 1 ms      Wait Until Element Is Visible    ${OPPORTUNITIES_MENU}
+
 
 Click Menu Opportunities
       Home Pages CMS Opened

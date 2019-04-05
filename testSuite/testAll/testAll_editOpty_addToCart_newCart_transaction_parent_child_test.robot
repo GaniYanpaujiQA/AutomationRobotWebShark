@@ -23,7 +23,8 @@ ${UNIT_BISNIS}        UB2 Requestor
 ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
 
-${PILIHPERUSAHAAN}      PT_PERSERO Parent Child
+${PILIHPERUSAHAAN}          PT_TBK Parent Child
+#PT_PERSERO Parent Child
 ${PILIHNPWP}            Parent Child (Child)
 ${OPTYNAME}             Opty Name New
 *** Test Cases ***

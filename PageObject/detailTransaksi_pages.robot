@@ -99,7 +99,7 @@ Message Success Buat Order
 
 Message Success Order Buy
     Sleep    2
-    Wait Until Element Is Visible         ${MESSAGE_WAITING_APPROVED}
+    Wait Until Keyword Succeeds         60 seconds    0 min 0 sec 1 ms   Wait Until Element Is Visible     ${MESSAGE_WAITING_APPROVED}
     Sleep    2
 
 Status Approval requestor
@@ -126,6 +126,7 @@ Click Check Button Update Opty
 
 Get opty name
     Wait Until Element Is Visible     ${SUCCESSUPDATEOPTY_MESSAGE}      timeout=20
+    Sleep    2
     Wait Until Element Is Visible     ${OPTYNAME_LABEL}
     ${opty_name}        Get Text            ${OPTYNAME_LABEL}
     Set Global Variable    ${opty_name}    ${opty_name}

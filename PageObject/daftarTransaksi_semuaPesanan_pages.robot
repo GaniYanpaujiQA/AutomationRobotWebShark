@@ -2,11 +2,6 @@
 Library       SeleniumLibrary
 
 *** Variables ***
-${TAB_SEMUAPESANAN}      //a[@href='http://shark-cf-development.bhinnekalocal.com/account/transaction']
-#//a[@href='http://shark-cf-development.bhinnekalocal.com/account/transaction']
-#//a[@href='http://shark-cf-staging.bhinnekalocal.com/account/transaction']
-
-
 ${SEARCH_TEXTBOX}                   //input[@id='search-transaction' and @name='search']
 ${DROPLIST_STATUS}                  //button[@data-id='ddlOptyStatus']
 ${TEXTBOX_STATUS }                  //input[@type='text' and @class='form-control' and @aria-label='Search']
