@@ -13,7 +13,7 @@ Resource          ../PageObject/cms/quotation_pages.robot
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentadmin@grr.la
 # ${EMAIL_APPROVER}     a.approver@grr.la
@@ -30,7 +30,7 @@ Lat Running
         [Template]    Create Transaction Get Opty
         [Teardown]    Close Browser
         #SearchData           catatan trx                  email requestor        password              Opty name
-        ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}           ${OPTYNAME}
+        ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}           ${OPTYNAME}
 
     Send Quotation From CMS Test
         [Template]    Send Quotation From CMS
@@ -52,11 +52,11 @@ Lat Running
         ${SELECTALL}
 *** Keywords ***
 Create Transaction Get Opty
-        [Arguments]          ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}
+        [Arguments]          ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}
         GIVEN Open Main Page Using Chrome Browser
         And Home Page To Login Email Page
         And Login Account Requestor Success      ${EMAIL_REQUESTOR}      ${PASSWORD}
-        And Open Detail Page After Search SKU           ${SEARCHDATA}
+        And Open Detail Page After Search SKU           ${SKU_NUMBER}
         And Add To Cart Product
         And List Transaction Opened Without Unit Bisnis
         And List First Transaction Selected

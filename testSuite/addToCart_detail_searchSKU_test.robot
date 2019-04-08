@@ -7,16 +7,16 @@ Resource          ../PageObject/daftarTransaksi_semuaPesanan_pages.robot
 Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 *** Test Cases ***
 Detail Product Search by SKU
     [Template]    Open Detail Product by SKU
     #SearchData
-    ${SEARCHDATA}
+    ${SKU_NUMBER}
 
 *** Keywords ***
 Open Detail Product by SKU
-        [Arguments]          ${SEARCHDATA}
+        [Arguments]          ${SKU_NUMBER}
         GIVEN Home Page To Login Email Page
         and Login Account Success
         and Open Detail Page After Search SKU

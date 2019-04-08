@@ -8,7 +8,7 @@ Resource          ../../PageObject/cms/quotation_pages.robot
 # Test Setup
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 *** Test Cases ***
 Open Opportunities

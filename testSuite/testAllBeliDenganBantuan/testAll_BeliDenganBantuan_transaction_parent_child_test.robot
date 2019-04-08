@@ -20,7 +20,7 @@ Test Setup        SeleniumLibrary.Set Selenium Speed    0.1 s
 Suite Teardown      Close All Browsers
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentchildrequestor@grr.la
 ${EMAIL_ADMIN}    a.parentadmin@grr.la
@@ -49,23 +49,23 @@ Create Transaction Parent Child Test
     [Template]    Create Transaction Parent Child
     [Teardown]    Close Browser
     #SearchData           catatan trx                  email requestor        password                   Select Company                 Select NPWP             Opty name           #Select drop list       textarea            ${UNIT_BISNIS}          Adrress                         Shipping Methode            Payment Methode                     Npwp                Phone Numb              EMAIL ADMIN
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}         ${UNIT_BISNIS}          ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}                     ${EMAIL_ADMIN}
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}         ${UNIT_BISNIS}          ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}                     ${EMAIL_ADMIN}
 
-#${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}         ${UNIT_BISNIS}          ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}                     ${EMAIL_ADMIN}
+#${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}         ${UNIT_BISNIS}          ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}                     ${EMAIL_ADMIN}
 
 
 *** Keywords ***
 
 Create Transaction Parent Child
-    [Arguments]                     ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}             ${UNIT_BISNIS}               ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}                ${EMAIL_ADMIN}
-    GIVEN Create Transaction Get Opty                   ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}           ${PILIHPERUSAHAAN}      ${PILIHNPWP}        ${OPTYNAME}              ${UNIT_BISNIS}
+    [Arguments]                     ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}             ${UNIT_BISNIS}               ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}                ${EMAIL_ADMIN}
+    GIVEN Create Transaction Get Opty                   ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}           ${PILIHPERUSAHAAN}      ${PILIHNPWP}        ${OPTYNAME}              ${UNIT_BISNIS}
     And Send Quotation From CMS                         ${SELECTALL}         ${TEXTAREA}             ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
     WHEN Buy Product From CF                           ${EMAIL_ADMIN}      ${PASSWORD}            ${TEXTAREA}          ${PILIHPERUSAHAAN}
     THEN Generate SO From CMS                           ${SELECTALL}
 
 
 Create Transaction Get Opty
-      [Arguments]          ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}           ${PILIHPERUSAHAAN}      ${PILIHNPWP}        ${OPTYNAME}           ${UNIT_BISNIS}
+      [Arguments]          ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}           ${PILIHPERUSAHAAN}      ${PILIHNPWP}        ${OPTYNAME}           ${UNIT_BISNIS}
       Open Main Page Using Chrome Browser
       Home Page To Login Email Page
       Login Account Requestor Success      ${EMAIL_REQUESTOR}      ${PASSWORD}

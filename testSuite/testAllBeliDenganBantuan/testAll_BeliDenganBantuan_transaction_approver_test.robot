@@ -18,7 +18,7 @@ Test Setup        SeleniumLibrary.Set Selenium Speed    0.3 s
 Suite Teardown      Close All Browsers
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentchildrequestor@grr.la
 #a.approver@grr.la
@@ -40,25 +40,25 @@ Create Transaction Approver Test
     [Timeout]       20 minute
     [Template]    Create Transaction Approver
     #SearchData           catatan trx                  email requestor                 password          unitBisnis              Opty name               Select drop list       textarea         email Approver                           OrderName           Adrress                         Shipping Methode            Payment Methode                     Npwp                Phone Numb
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     ${EMAIL_APPROVER}                        ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}              ${PHONE}
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la                   ${ORDER_NAME}        Parent Admin Address 1         ARM1                        ${PAYMENTMETHOD}                    -                   wsdasd
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}             ${SELECTALL}              ${TEXTAREA}     a.approver@grr.la                        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                  asdsadsad
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     ${EMAIL_APPROVER}                        ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}              ${PHONE}
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la                   ${ORDER_NAME}        Parent Admin Address 1         ARM1                        ${PAYMENTMETHOD}                    -                   wsdasd
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}             ${SELECTALL}              ${TEXTAREA}     a.approver@grr.la                        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                  asdsadsad
 #
-# ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     ${EMAIL_APPROVER}                        ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}              ${PHONE}
-#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la                   ${ORDER_NAME}        Parent Admin Address 1         ARM1                        ${PAYMENTMETHOD}                    -                   wsdasd
-#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}             ${SELECTALL}              ${TEXTAREA}     a.approver@grr.la                        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                  asdsadsad
+# ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     ${EMAIL_APPROVER}                        ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}              ${PHONE}
+#    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la                   ${ORDER_NAME}        Parent Admin Address 1         ARM1                        ${PAYMENTMETHOD}                    -                   wsdasd
+#    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}             ${SELECTALL}              ${TEXTAREA}     a.approver@grr.la                        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                  asdsadsad
 
 *** Keywords ***
 Create Transaction Approver
-    [Arguments]                  ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}          ${TEXTAREA}     ${EMAIL_APPROVER}           ${ORDER_NAME}       ${ADDRESS}                 ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}            ${NPWP}               ${PHONE}
-    GIVEN Create Transaction Get Opty       ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}       ${UNIT_BISNIS}       ${OPTYNAME}                 ${ORDER_NAME}            ${TEXTAREA}
+    [Arguments]                  ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}          ${TEXTAREA}     ${EMAIL_APPROVER}           ${ORDER_NAME}       ${ADDRESS}                 ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}            ${NPWP}               ${PHONE}
+    GIVEN Create Transaction Get Opty       ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}       ${UNIT_BISNIS}       ${OPTYNAME}                 ${ORDER_NAME}            ${TEXTAREA}
     And Send Quotation From CMS      ${SELECTALL}         ${TEXTAREA}           ${ADDRESS}                 ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}              ${NPWP}            ${PHONE}
     And Buy Product From CF          ${EMAIL_REQUESTOR}      ${PASSWORD}            ${TEXTAREA}
     WHEN Approve By Approver CF      ${EMAIL_APPROVER}      ${PASSWORD}            ${TEXTAREA}
     THEN Generate SO From CMS        ${SELECTALL}
 
 Create Transaction Get Opty
-        [Arguments]          ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${ORDER_NAME}                    ${TEXTAREA}
+        [Arguments]          ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${ORDER_NAME}                    ${TEXTAREA}
       Open Main Page Using Chrome Browser
       Home Page To Login Email Page
       Login Account Requestor Success      ${EMAIL_REQUESTOR}      ${PASSWORD}

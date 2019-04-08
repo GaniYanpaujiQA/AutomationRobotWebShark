@@ -8,7 +8,7 @@ Resource          ../pages/daftartransaksi_bantuansales_pages.robot
 Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         a
+${SKU_NUMBER}         a
 ${STATUS}             Permintaan
 ${STARDATE}           14 Jan 2019
 ${ENDDATE}            13 Feb 2019
@@ -16,13 +16,13 @@ ${ENDDATE}            13 Feb 2019
 Open Transaksi Bantuan Sales
         [Template]       Open Transaksi  Bantuan Sales Page
         #SEARCHDATA   STATUS              starDate          endDate
-        ${SEARCHDATA}     ${STATUS}       ${STARDATE}       ${ENDDATE}
+        ${SKU_NUMBER}     ${STATUS}       ${STARDATE}       ${ENDDATE}
 *** Keywords ***
 Open Transaksi Bantuan Sales Page
-        [Arguments]    ${SEARCHDATA}     ${STATUS}        ${STARDATE}       ${ENDDATE}
+        [Arguments]    ${SKU_NUMBER}     ${STATUS}        ${STARDATE}       ${ENDDATE}
         GIVEN Page Transaksi Bantuan Sales Already Opened
         WHEN Click Menu Transaksi Bantuan Sales
-        THEN Page Transaksi Bantuan Sales will be displayed    ${SEARCHDATA}     ${STATUS}      ${STARDATE}       ${ENDDATE}
+        THEN Page Transaksi Bantuan Sales will be displayed    ${SKU_NUMBER}     ${STATUS}      ${STARDATE}       ${ENDDATE}
 
 
 Page Transaksi Bantuan Sales Already Opened
@@ -35,10 +35,10 @@ Click Menu Transaksi Bantuan Sales
         Klik Button Menu Transaksi
 
 Page Transaksi Bantuan Sales will be displayed
-        [Arguments]       ${SEARCHDATA}       ${STATUS}     ${STARDATE}       ${ENDDATE}
+        [Arguments]       ${SKU_NUMBER}       ${STATUS}     ${STARDATE}       ${ENDDATE}
         Klik Tab Bantuan Sales
         Tab Bantuan Sales Already Opened
-        Input Text Search Field Tab Bantuan Sales    ${SEARCHDATA}
+        Input Text Search Field Tab Bantuan Sales    ${SKU_NUMBER}
         Select Droplist Status Tab Bantuan Sales    ${STATUS}
         Select Star and End Date Tab Bantuan Sales   ${STARDATE}    ${ENDDATE}
         Close Window

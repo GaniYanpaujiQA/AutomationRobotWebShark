@@ -33,8 +33,8 @@ Tab Pesanan berjalan Already Opened
 
 
 Input Text Search Field
-    [Arguments]            ${searchData}
-     Input Text       ${SEARCH_TEXTBOX}         ${searchData}
+    [Arguments]            ${SKU_NUMBER}
+     Input Text       ${SEARCH_TEXTBOX}         ${SKU_NUMBER}
      Click Element                    ${ICON_SEARCH}
 
 Select Droplist Status

@@ -9,17 +9,17 @@ Resource         ../PageObject/daftartransaksi_bantuansales_pages.robot
 Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         b1@grr.la
+${SKU_NUMBER}         b1@grr.la
 *** Test Cases ***
 Open Beli Dengan Bantuan Test
     [Template]    Open Beli Dengan Bantuan
 
     #SearchData
-    ${SEARCHDATA}
+    ${SKU_NUMBER}
 
 *** Keywords ***
 Open Beli Dengan Bantuan
-        [Arguments]          ${SEARCHDATA}
+        [Arguments]          ${SKU_NUMBER}
         GIVEN Home Page To Login Email Page
         And Login Account Success
         # And Click Button Menu Transaksi
@@ -27,7 +27,7 @@ Open Beli Dengan Bantuan
         And Click Beli Dengan Bantuan Button
         WHEN Input Nama Order Text Field From Pop Up Pembelian dengan bantuan Sales                    karjo
         And Select Department From Pop Up Pembelian dengan bantuan Sales                CHILDREQUESTOR
-        And Input Pesan Untuk Sales Text Field From Pop Up Pembelian dengan bantuan Sales               ${SEARCHDATA}
+        And Input Pesan Untuk Sales Text Field From Pop Up Pembelian dengan bantuan Sales               ${SKU_NUMBER}
         And Click Submit Dengan Bantuan Button From Pop Up Pembelian dengan bantuan Sales
         THEN Click Kembali Ke Dashboard Button From Pop Up Permintaan bantuan diproses
         And Klik Tab Bantuan Sales

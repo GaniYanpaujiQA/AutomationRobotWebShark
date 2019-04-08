@@ -5,18 +5,18 @@ Resource          ../pages/home_pages.robot
 Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 *** Test Cases ***
 Search SKU
     [Template]    Open Search by SKU
     #SearchData
-    ${SEARCHDATA}
+    ${SKU_NUMBER}
 
 *** Keywords ***
 Open Search by SKU
-        [Arguments]          ${SEARCHDATA}
+        [Arguments]          ${SKU_NUMBER}
         GIVEN Home Page To Login Email Page
         and Login Account Success
         and Home Page After Login
-        WHEN Search Product by SKU    ${SEARCHDATA}
+        WHEN Search Product by SKU    ${SKU_NUMBER}
         THEN Product by SKU Showed

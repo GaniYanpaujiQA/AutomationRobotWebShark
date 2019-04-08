@@ -8,7 +8,7 @@ Resource          ../pages/daftarTransaksi_pesananBerjalan_pages.robot
 Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         a
+${SKU_NUMBER}         a
 ${STATUS}             Draft
 ${STARDATE}           14 Jan 2019
 ${ENDDATE}            13 Feb 2019
@@ -16,13 +16,13 @@ ${ENDDATE}            13 Feb 2019
 Open Transaksi Pesanan Berjalan
         [Template]       Open Transaksi Pesanan Berjalan Page
         #SEARCHDATA   STATUS              starDate          endDate
-        ${SEARCHDATA}     ${STATUS}       ${STARDATE}       ${ENDDATE}
+        ${SKU_NUMBER}     ${STATUS}       ${STARDATE}       ${ENDDATE}
 *** Keywords ***
 Open Transaksi Pesanan Berjalan Page
-        [Arguments]    ${SEARCHDATA}     ${STATUS}        ${STARDATE}       ${ENDDATE}
+        [Arguments]    ${SKU_NUMBER}     ${STATUS}        ${STARDATE}       ${ENDDATE}
         GIVEN Page Transaksi Pesanan Berjalan Already Opened
         WHEN Click Menu Transaksi Pesanan Berjalan
-        THEN Page Transaksi Pesanan Berjalan will be displayed    ${SEARCHDATA}     ${STATUS}      ${STARDATE}       ${ENDDATE}
+        THEN Page Transaksi Pesanan Berjalan will be displayed    ${SKU_NUMBER}     ${STATUS}      ${STARDATE}       ${ENDDATE}
 
 
 Page Transaksi Pesanan Berjalan Already Opened
@@ -36,10 +36,10 @@ Click Menu Transaksi Pesanan Berjalan
 
 
 Page Transaksi Pesanan Berjalan will be displayed
-        [Arguments]       ${SEARCHDATA}       ${STATUS}     ${STARDATE}       ${ENDDATE}
+        [Arguments]       ${SKU_NUMBER}       ${STATUS}     ${STARDATE}       ${ENDDATE}
         Klik Tab Pesanan Berjalan
         Tab Pesanan berjalan Already Opened
-        Input Text Search Field    ${SEARCHDATA}
+        Input Text Search Field    ${SKU_NUMBER}
         Select Droplist Status    ${STATUS}
         Select Star and End Date    ${STARDATE}    ${ENDDATE}
         Close Window

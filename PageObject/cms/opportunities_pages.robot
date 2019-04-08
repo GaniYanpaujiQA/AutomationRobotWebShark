@@ -155,10 +155,11 @@ Add SKU To Cart From Opty Detail (Step 2)
 
 #Pop Up Add SKU
 Search By SKU from Pop Up Add SKU (Step 2)
+    [Arguments]             ${sku_number}
     Sleep    3
     Wait Until Element Is Visible     ${INPUTOPTYSEARCH_TEXTBOX}       timeout=20
     Wait Until Element Is Visible     ${ICONSEARCHSKU_ICON}       timeout=20
-    Input Text               ${INPUTOPTYSEARCH_TEXTBOX}                SKU00310360
+    Input Text               ${INPUTOPTYSEARCH_TEXTBOX}                ${sku_number}
     Click Element            ${ICONSEARCHSKU_ICON}
 
 Click Select SKU Button from Pop Up Add SKU (Step 2)

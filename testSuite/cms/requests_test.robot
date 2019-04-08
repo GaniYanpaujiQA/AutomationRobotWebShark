@@ -10,7 +10,7 @@ Resource          ../apiTest/getQuotationDetail_test.robot
 Test Setup        Open Main Page CMS Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${ADDRESS}            Parent Child Address 1
 ${SHIPPINGMETHOD}     ARM1

@@ -20,7 +20,7 @@ Suite Teardown      Close All Browsers
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentchildrequestor@grr.la
 ${EMAIL_ADMIN}    a.parentadmin@grr.la
@@ -44,23 +44,23 @@ ${NPWP}                 Parent Child
 ${ACCOUNT_NUMBER}       B2BACC00000000000012
 #B2BACC00000000000012 staging
 #B2BACC00000000022815 dev
-${OPTY_NAME}            Regress Sprint 27 CMS3
+${OPTY_NAME}            Regress Sprint 27 CMS4
 ${CONTACT_NAME}         cms
 *** Test Cases ***
-Create Transaction Parent Child Test
+Create Transaction CMS Test
 #    [Timeout]     5 minute
     [Template]  Send Quotation From CMS
 #   Account Number          Opty Name           Contact Name            Address             Shipping Method                     PAyment Method          Phone               Text Area
-   ${ACCOUNT_NUMBER}        ${OPTY_NAME}        ${CONTACT_NAME}         ${ADDRESS}          ${SHIPPINGMETHOD}               ${PAYMENTMETHOD}            ${PHONE}            ${TEXTAREA}
+    ${SKU_NUMBER}        ${ACCOUNT_NUMBER}        ${OPTY_NAME}        ${CONTACT_NAME}         ${ADDRESS}          ${SHIPPINGMETHOD}               ${PAYMENTMETHOD}            ${PHONE}            ${TEXTAREA}
 #    [Teardown]    Close Browser
 #    #SearchData           catatan trx                  email requestor        password                   Select Company                 Select NPWP             Opty name           #Select drop list       textarea            ${UNIT_BISNIS}          Adrress                         Shipping Methode            Payment Methode                     Npwp                Phone Numb              EMAIL ADMIN
-#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}         ${UNIT_BISNIS}          ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}                     ${EMAIL_ADMIN}
+#    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}         ${UNIT_BISNIS}          ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}                     ${EMAIL_ADMIN}
 
 
 
 *** Keywords ***
 Send Quotation From CMS
-      [Arguments]                         ${ACCOUNT_NUMBER}        ${OPTY_NAME}        ${CONTACT_NAME}         ${ADDRESS}          ${SHIPPINGMETHOD}               ${PAYMENTMETHOD}            ${PHONE}            ${TEXTAREA}
+      [Arguments]                  ${SKU_NUMBER}           ${ACCOUNT_NUMBER}        ${OPTY_NAME}        ${CONTACT_NAME}         ${ADDRESS}          ${SHIPPINGMETHOD}               ${PAYMENTMETHOD}            ${PHONE}            ${TEXTAREA}
       Open Main Page CMS Using Chrome Browser
       Login Account CMS Success
       Home Pages CMS Opened
@@ -77,7 +77,7 @@ Send Quotation From CMS
       Select Phone From Opty Detail (Step 2)       ${PHONE}
       Select Shipping Note From Opty Detail (Step 2)    ${TEXTAREA}
       Add SKU To Cart From Opty Detail (Step 2)
-      Search By SKU from Pop Up Add SKU (Step 2)
+      Search By SKU from Pop Up Add SKU (Step 2)        ${SKU_NUMBER}
       Click Select SKU Button from Pop Up Add SKU (Step 2)
       Click Add To Cart Button from Pop Up Add SKU (Step 2)
       Click Save And Continue Button From Basic Info (Step 1)

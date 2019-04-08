@@ -13,7 +13,7 @@ Resource          ../../PageObject/cms/quotation_pages.robot
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentchildrequestor@grr.la
 #a.approver@grr.la
@@ -30,9 +30,9 @@ Create Transaction Approver New Cart Test
     [Template]    Create Transaction Approver New Cart Get Opty
     [Teardown]    Close Browser
     #SearchData           catatan trx                  email requestor        password          unitBisnis              Opty name
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}
 
 # Send Quotation From CMS Test
 #     [Timeout]       5 minute
@@ -64,11 +64,11 @@ Create Transaction Approver New Cart Test
 #     ${SELECTALL}
 *** Keywords ***
 Create Transaction Approver New Cart Get Opty
-        [Arguments]          ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}
+        [Arguments]          ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}
         GIVEN Open Main Page Using Chrome Browser
         And Home Page To Login Email Page
         And Login Account Requestor Success      ${EMAIL_REQUESTOR}      ${PASSWORD}
-        And Open Detail Page After Search SKU           ${SEARCHDATA}
+        And Open Detail Page After Search SKU           ${SKU_NUMBER}
         And Add To Cart Product
         And List Transaction Opened    ${UNIT_BISNIS}
         And List First Transaction Selected

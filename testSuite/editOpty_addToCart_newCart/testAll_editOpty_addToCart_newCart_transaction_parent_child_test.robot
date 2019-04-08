@@ -14,7 +14,7 @@ Resource          ../../PageObject/pengaturanAnakPerusahaan_pages.robot
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentadmin@grr.la
 # ${EMAIL_APPROVER}     a.approver@grr.la       a.parentadmin@grr.la    a.parentchild@grr.la
@@ -32,26 +32,26 @@ Create Transaction Parent Child Test
     [Template]    Create Transaction Parent Child
     [Teardown]    Close Browser
     #SearchData           catatan trx                  email requestor        password                   Select Company                 Select NPWP             Opty name           #Select drop list       textarea
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}
 
 
 
 *** Keywords ***
 
 Create Transaction Parent Child
-    [Arguments]                     ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}
-    GIVEN Create Transaction Get Opty                   ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}           ${PILIHPERUSAHAAN}      ${PILIHNPWP}        ${OPTYNAME}
+    [Arguments]                     ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}
+    GIVEN Create Transaction Get Opty                   ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}           ${PILIHPERUSAHAAN}      ${PILIHNPWP}        ${OPTYNAME}
     And Send Quotation From CMS                         ${SELECTALL}         ${TEXTAREA}
     WHEN Buy Product From CF                           ${EMAIL_REQUESTOR}      ${PASSWORD}            ${TEXTAREA}          ${PILIHPERUSAHAAN}
     THEN Generate SO From CMS                           ${SELECTALL}
 
 
 Create Transaction Get Opty
-[Arguments]          ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}           ${PILIHPERUSAHAAN}      ${PILIHNPWP}        ${OPTYNAME}
+[Arguments]          ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}           ${PILIHPERUSAHAAN}      ${PILIHNPWP}        ${OPTYNAME}
     Open Main Page Using Chrome Browser
     Home Page To Login Email Page
     Login Account Requestor Success      ${EMAIL_REQUESTOR}      ${PASSWORD}
-    Open Detail Page After Search SKU           ${SEARCHDATA}
+    Open Detail Page After Search SKU           ${SKU_NUMBER}
     Add To Cart Product
     Transaction Opened With Select Company    ${PILIHPERUSAHAAN}
     List First Transaction Selected

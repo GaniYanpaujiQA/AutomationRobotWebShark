@@ -13,7 +13,7 @@ Resource          ../../PageObject/cms/quotation_pages.robot
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentadmin@grr.la
 # ${EMAIL_APPROVER}     a.approver@grr.la
@@ -28,9 +28,9 @@ Create Transaction Admin New Cart Test
     [Template]    Create Transaction Admin New Cart Get Opty
     [Teardown]    Close Browser
     #SearchData           catatan trx                  email requestor        password              Opty name
-    ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}
-    ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}
-    ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}
+    ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}
+    ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}
+    ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}
 
 # Send Quotation From CMS Test
 #     [Timeout]       10 minute
@@ -55,11 +55,11 @@ Create Transaction Admin New Cart Test
 #     ${SELECTALL}
 *** Keywords ***
 Create Transaction Admin New Cart Get Opty
-        [Arguments]          ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}
+        [Arguments]          ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}
         GIVEN Open Main Page Using Chrome Browser
         And Home Page To Login Email Page
         And Login Account Requestor Success      ${EMAIL_REQUESTOR}      ${PASSWORD}
-        And Open Detail Page After Search SKU           ${SEARCHDATA}
+        And Open Detail Page After Search SKU           ${SKU_NUMBER}
         And Add To Cart Product
         And List Transaction Opened Without Unit Bisnis
         And List First Transaction Selected

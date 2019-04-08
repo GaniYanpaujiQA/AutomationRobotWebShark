@@ -31,8 +31,8 @@ Tab Histori Budgets Already Opened
 
 
 Input Text Search Field Tab Histori Budgets
-    [Arguments]            ${searchData}
-     Input Text       ${SEARCH_TEXTBOX}         ${searchData}
+    [Arguments]            ${SKU_NUMBER}
+     Input Text       ${SEARCH_TEXTBOX}         ${SKU_NUMBER}
      Click Element                    ${ICON_SEARCHHISTORYBUDGET}
 
 Select Droplist Status Tab Bantuan Sales
