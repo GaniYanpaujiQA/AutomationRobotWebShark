@@ -44,7 +44,9 @@ ${SHIPPINGMETHOD}       ARM1
 ${PAYMENTMETHOD}        CBD - Bank Transfer > Bank UOB
 ${NPWP}                 Parent Child
 ${ACCOUNT_NUMBER}       B2BACC00000000000012
+
 #B2BACC00000000000012 staging
+
 #B2BACC00000000022815 dev
 ${OPTY_NAME}            Regress Sprint 27 CMS2
 ${CONTACT_NAME}         cms
