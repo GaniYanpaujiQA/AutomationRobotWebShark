@@ -24,9 +24,11 @@ ${SEARCHDATA}         3320724191
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentchildrequestor@grr.la
 ${EMAIL_ADMIN}    a.parentadmin@grr.la
+
 # ${EMAIL_APPROVER}     a.approver@grr.la       a.parentadmin@grr.la    a.parentchild@grr.la
 ${PASSWORD}           Bhinneka321
 ${UNIT_BISNIS}        CHILDREQUESTOR
+
 #UB2 Requestor
 ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
