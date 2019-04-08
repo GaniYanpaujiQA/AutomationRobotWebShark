@@ -8,20 +8,20 @@ Resource          ../PageObject/daftarTransaksi_semuaPesanan_pages.robot
 Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 *** Test Cases ***
 Detail Product Search by SKU
     [Template]    Open Detail Product by SKU
     #SearchData           catatan trx
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}
 
 *** Keywords ***
 Open Detail Product by SKU
-        [Arguments]          ${SEARCHDATA}         ${CATATANTRANSAKSI}
+        [Arguments]          ${SKU_NUMBER}         ${CATATANTRANSAKSI}
         GIVEN Home Page To Login Email Page
         and Login Account Success
-        and Open Detail Page After Search SKU            ${SEARCHDATA}
+        and Open Detail Page After Search SKU            ${SKU_NUMBER}
         and Add To Cart Product
         and List Transaction Opened    CHILDAPPROVER
         and List First Transaction Selected

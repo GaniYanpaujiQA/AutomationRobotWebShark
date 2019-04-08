@@ -18,7 +18,7 @@ Suite Teardown      Close All Browsers
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_ADMIN}    a.parentadmin@grr.la
 ${PASSWORD}           Bhinneka321
@@ -37,18 +37,18 @@ Create Transaction Admin Test
     [Timeout]       20 minute
     [Template]    Create Transaction Admin
     #SearchData           catatan trx                  email requestor        password              Opty name                     Text Area        Select All       OrderName           Adrress                         Shipping Methode            Payment Methode                     Npwp                Phone Numb
-     ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_ADMIN}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}        ${SELECTALL}     ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
-     ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}     ${SELECTALL}        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                    asdsadsad
-     ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}              ${TEXTAREA}      ${SELECTALL}       ${ORDER_NAME}       Parent Child Address 1           ARM1                        ${PAYMENTMETHOD}                Parent Admin         0812312312312
+     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_ADMIN}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}        ${SELECTALL}     ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
+     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}     ${SELECTALL}        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                    asdsadsad
+     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}              ${TEXTAREA}      ${SELECTALL}       ${ORDER_NAME}       Parent Child Address 1           ARM1                        ${PAYMENTMETHOD}                Parent Admin         0812312312312
 
-#     ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_ADMIN}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}        ${SELECTALL}     ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
-#     ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}     ${SELECTALL}        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                    asdsadsad
-#     ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}              ${TEXTAREA}      ${SELECTALL}       ${ORDER_NAME}       Parent Child Address 1           ARM1                        ${PAYMENTMETHOD}                Parent Admin         0812312312312
+#     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_ADMIN}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}        ${SELECTALL}     ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
+#     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}     ${SELECTALL}        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                    asdsadsad
+#     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}              ${TEXTAREA}      ${SELECTALL}       ${ORDER_NAME}       Parent Child Address 1           ARM1                        ${PAYMENTMETHOD}                Parent Admin         0812312312312
 
 *** Keywords ***
 
 Create Transaction Admin
-    [Arguments]      ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_ADMIN}      ${PASSWORD}            ${OPTYNAME}            ${TEXTAREA}         ${SELECTALL}         ${ORDER_NAME}              ${ADDRESS}                 ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}            ${NPWP}        ${PHONE}
+    [Arguments]      ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_ADMIN}      ${PASSWORD}            ${OPTYNAME}            ${TEXTAREA}         ${SELECTALL}         ${ORDER_NAME}              ${ADDRESS}                 ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}            ${NPWP}        ${PHONE}
     GIVEN Create Transaction Get Opty              ${EMAIL_ADMIN}      ${PASSWORD}            ${TEXTAREA}                  ${ORDER_NAME}
     And Send Quotation From CMS                   ${SELECTALL}         ${TEXTAREA}              ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
     WHEN Buy Product From CF                      ${EMAIL_ADMIN}      ${PASSWORD}            ${TEXTAREA}

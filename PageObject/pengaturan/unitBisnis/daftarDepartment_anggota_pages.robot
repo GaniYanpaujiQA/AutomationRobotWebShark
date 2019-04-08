@@ -26,8 +26,8 @@ Click Tab Anggota
 
 
 Input Text Search And Click Icon Search Field Tab Anggota
-    [Arguments]            ${searchData}
-     Input Text       ${SEARCH_TEXTBOX}         ${searchData}
+    [Arguments]            ${SKU_NUMBER}
+     Input Text       ${SEARCH_TEXTBOX}         ${SKU_NUMBER}
      Click Element                    ${ICON_SEARCH}
 
 

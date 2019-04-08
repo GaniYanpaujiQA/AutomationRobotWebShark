@@ -46,17 +46,17 @@ Tab Semua Pesanan Already Opened
 
 
 Input Text Search Field Tab Semua Pesanan
-    [Arguments]            ${searchData}
+    [Arguments]            ${SKU_NUMBER}
     Wait Until Element Is Visible         ${SEARCH_TEXTBOX}
-    Input Text             ${SEARCH_TEXTBOX}         ${searchData}
+    Input Text             ${SEARCH_TEXTBOX}         ${SKU_NUMBER}
     Wait Until Element Is Visible         ${ICON_SEARCH}
     Click Element                    ${ICON_SEARCH}
 
 Input Text Search Field Tab Semua Pesanan For Anak Perusahaan
-    [Arguments]            ${searchData}
+    [Arguments]            ${SKU_NUMBER}
     Execute JavaScript    window.scrollTo(0,700)
     Wait Until Element Is Visible         ${SEARCH_TEXTBOX}
-    Input Text       ${SEARCH_TEXTBOX}         ${searchData}
+    Input Text       ${SEARCH_TEXTBOX}         ${SKU_NUMBER}
     Wait Until Element Is Visible         ${ICON_SEARCHANAKPERUSAHAAN}
     Log To Console     Icon Detected
     # clickProblem        ${ICON_SEARCH}

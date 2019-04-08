@@ -13,7 +13,7 @@ Resource          ../PageObject/cms/quotation_pages.robot
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentadmin@grr.la
 # ${EMAIL_APPROVER}     a.approver@grr.la
@@ -32,7 +32,7 @@ Get Data From Environment
     ...     Set Data Development
 
 Set Data Staging
-    ${SEARCHDATA}         3320724191
+    ${SKU_NUMBER}        SKU00717707
     ${CATATANTRANSAKSI}   SADASDASasda
     ${EMAIL_REQUESTOR}    a.parentadmin@grr.la
     # ${EMAIL_APPROVER}     a.approver@grr.la

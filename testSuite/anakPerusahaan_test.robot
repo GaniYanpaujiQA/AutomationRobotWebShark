@@ -7,17 +7,17 @@ Resource          ../PageObject/pengaturanAnakPerusahaan_pages.robot
 Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         b1@grr.la
+${SKU_NUMBER}         b1@grr.la
 *** Test Cases ***
 Open Daftar Department
     [Template]    Open Daftar Department Page
 
     #SearchData
-    ${SEARCHDATA}
+    ${SKU_NUMBER}
 
 *** Keywords ***
 Open Daftar Department Page
-        [Arguments]          ${SEARCHDATA}
+        [Arguments]          ${SKU_NUMBER}
         GIVEN Home Page To Login Email Page
         and Login Account Success
         And Click Button Menu Pengaturan Anak Perusahaan

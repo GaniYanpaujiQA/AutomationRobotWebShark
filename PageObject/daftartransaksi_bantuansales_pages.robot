@@ -37,8 +37,8 @@ Tab Bantuan Sales Already Opened
 
 
 Input Text Search Field Tab Bantuan Sales
-    [Arguments]            ${searchData}
-    Input Text       ${SEARCH_TEXTBOX}         ${searchData}
+    [Arguments]            ${SKU_NUMBER}
+    Input Text       ${SEARCH_TEXTBOX}         ${SKU_NUMBER}
     Click Element                    ${ICON_SEARCH}
 
 Select Droplist Status Tab Bantuan Sales

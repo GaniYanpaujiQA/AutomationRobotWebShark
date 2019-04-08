@@ -13,7 +13,7 @@ Resource          ../../PageObject/cms/quotation_pages.robot
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         3320724191
+${SKU_NUMBER}        SKU00717707
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentadmin@grr.la
 # ${EMAIL_APPROVER}     a.approver@grr.la
@@ -27,25 +27,25 @@ Create Transaction Admin Test
     [Timeout]       10 minute
     [Template]    Create Transaction Admin
     #SearchData           catatan trx                  email requestor        password              Opty name                     Text Area        Select All
-     ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
-     # ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
-     # ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
+     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
+     # ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
+     # ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
 
 *** Keywords ***
 
 Create Transaction Admin
-    [Arguments]             ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}         ${SELECTALL}
-    GIVEN Create Transaction Get Opty             ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}
+    [Arguments]             ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}         ${SELECTALL}
+    GIVEN Create Transaction Get Opty             ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}
     And Send Quotation From CMS                   ${SELECTALL}         ${TEXTAREA}
     WHEN Buy Product From CF                      ${EMAIL_REQUESTOR}      ${PASSWORD}            ${TEXTAREA}
     Generate SO From CMS                     ${SELECTALL}
 
 Create Transaction Get Opty
-    [Arguments]          ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}
+    [Arguments]          ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}
     Open Main Page Using Chrome Browser
     Home Page To Login Email Page
     Login Account Requestor Success      ${EMAIL_REQUESTOR}      ${PASSWORD}
-    Open Detail Page After Search SKU           ${SEARCHDATA}
+    Open Detail Page After Search SKU           ${SKU_NUMBER}
     Add To Cart Product
     List Transaction Opened Without Unit Bisnis
     List First Transaction Selected

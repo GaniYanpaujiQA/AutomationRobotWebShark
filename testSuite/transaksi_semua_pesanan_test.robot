@@ -8,7 +8,7 @@ Resource          ../PageObject/daftarTransaksi_semuaPesanan_pages.robot
 Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
-${SEARCHDATA}         a
+${SKU_NUMBER}         a
 ${STATUS}             Draft
 ${STARDATE}           14 Jan 2019
 ${ENDDATE}            13 Feb 2019
@@ -17,13 +17,13 @@ ${DEPARTMENT}         Semua
 Open Transaksi Semua Pesanan
         [Template]       Open Transaksi Semua Pesanan Page
         #SEARCHDATA   STATUS              starDate          endDate        Department
-        ${SEARCHDATA}     ${STATUS}       ${STARDATE}       ${ENDDATE}     ${DEPARTMENT}
+        ${SKU_NUMBER}     ${STATUS}       ${STARDATE}       ${ENDDATE}     ${DEPARTMENT}
 *** Keywords ***
 Open Transaksi Semua Pesanan Page
-        [Arguments]    ${SEARCHDATA}     ${STATUS}        ${STARDATE}       ${ENDDATE}      ${DEPARTMENT}
+        [Arguments]    ${SKU_NUMBER}     ${STATUS}        ${STARDATE}       ${ENDDATE}      ${DEPARTMENT}
         GIVEN Page Transaksi Semua Pesanan Already Opened
         WHEN Click Menu Transaksi Semua Pesanan
-        THEN Page Transaksi Semua Pesanan will be displayed    ${SEARCHDATA}     ${STATUS}      ${STARDATE}       ${ENDDATE}     ${DEPARTMENT}
+        THEN Page Transaksi Semua Pesanan will be displayed    ${SKU_NUMBER}     ${STATUS}      ${STARDATE}       ${ENDDATE}     ${DEPARTMENT}
 
 
 Page Transaksi Semua Pesanan Already Opened
@@ -37,10 +37,10 @@ Click Menu Transaksi Semua Pesanan
 
 
 Page Transaksi Semua Pesanan will be displayed
-        [Arguments]       ${SEARCHDATA}       ${STATUS}     ${STARDATE}       ${ENDDATE}    ${DEPARTMENT}
+        [Arguments]       ${SKU_NUMBER}       ${STATUS}     ${STARDATE}       ${ENDDATE}    ${DEPARTMENT}
         Klik Tab Semua Pesanan
         Tab Semua Pesanan Already Opened
-        Input Text Search Field Tab Semua Pesanan    ${SEARCHDATA}
+        Input Text Search Field Tab Semua Pesanan    ${SKU_NUMBER}
         Select Droplist Status Tab Semua Pesanan    ${STATUS}
         Select Droplist Department Tab Semua Pesanan        ${DEPARTMENT}
         Select Droplist Bantuan Sales Tab Semua Pesanan    ${DEPARTMENT}
