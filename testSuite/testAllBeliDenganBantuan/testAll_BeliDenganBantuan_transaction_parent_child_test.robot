@@ -17,6 +17,7 @@ Resource          ../apiTest/getQuotationDetail_test.robot
 Resource          ../../PageObject/cms/requests_pages.robot
 Test Setup        SeleniumLibrary.Set Selenium Speed    0.1 s
 # Test Setup        Open Main Page Using Chrome Browser
+Suite Teardown      Close All Browsers
 
 *** Variables ***
 ${SEARCHDATA}         3320724191

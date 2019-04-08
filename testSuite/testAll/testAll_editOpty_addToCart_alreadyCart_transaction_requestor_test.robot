@@ -10,6 +10,7 @@ Resource          ../../PageObject/cms/loginCMS_pages.robot
 Resource          ../../PageObject/cms/homeCMS_pages.robot
 Resource          ../../PageObject/cms/opportunities_pages.robot
 Resource          ../../PageObject/cms/quotation_pages.robot
+Suite Teardown      Close All Browsers
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***

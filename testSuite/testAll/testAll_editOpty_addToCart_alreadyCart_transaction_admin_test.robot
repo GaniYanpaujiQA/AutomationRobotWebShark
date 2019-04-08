@@ -11,6 +11,7 @@ Resource          ../../PageObject/cms/homeCMS_pages.robot
 Resource          ../../PageObject/cms/opportunities_pages.robot
 Resource          ../../PageObject/cms/quotation_pages.robot
 Test Setup        SeleniumLibrary.Set Selenium Speed    0.1 s
+Suite Teardown      Close All Browsers
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
