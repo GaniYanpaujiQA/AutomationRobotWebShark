@@ -16,6 +16,7 @@ Resource         ../../PageObject/daftartransaksi_bantuansales_pages.robot
 Resource          ../apiTest/getQuotationDetail_test.robot
 Resource          ../../PageObject/cms/requests_pages.robot
 Test Setup        SeleniumLibrary.Set Selenium Speed    0.1 s
+Suite Teardown      Close All Browsers
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***
@@ -32,7 +33,6 @@ ${TEXTAREA}           SADSAsadsaad asda asdsad
 
 ${PILIHPERUSAHAAN}      PT_TBK Parent Child
 ${PILIHNPWP}            Parent Child (Child)
-${OPTYNAME}             Opty Name New
 ${NPWP}                 Parent Child
 
 ${ORDER_NAME}           Order Name
@@ -41,8 +41,10 @@ ${ADDRESS}              Cms Address 1
 ${SHIPPINGMETHOD}       ARM1
 ${PAYMENTMETHOD}        CBD - Bank Transfer > Bank UOB
 ${NPWP}                 Parent Child
-${ACCOUNT_NUMBER}       B2BACC00000000022815
-${OPTY_NAME}            SANDOPTY NAME
+${ACCOUNT_NUMBER}       B2BACC00000000000012
+#B2BACC00000000000012 staging
+#B2BACC00000000022815 dev
+${OPTY_NAME}            Regress Sprint 27 CMS2
 ${CONTACT_NAME}         cms
 *** Test Cases ***
 Create Transaction Parent Child Test
@@ -81,7 +83,6 @@ Send Quotation From CMS
       Pop Up Send Quatation Input Notes               ${TEXTAREA}
       Pop Up Send Quatation Click Button Send Quatation
       Quotation Get Number
-      Get Opty Num From Backend
       Click Approve Button CMS Quotation
       Input Quotation ID from POP UP Approve Quotation
       Click Approve Button CMS Quotation from POP UP Approve Quotation
