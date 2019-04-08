@@ -20,9 +20,7 @@ Test Setup        SeleniumLibrary.Set Selenium Speed    0.3 s
 ${SEARCHDATA}         3320724191
 ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_ADMIN}    a.parentadmin@grr.la
-# ${EMAIL_APPROVER}     a.approver@grr.la
 ${PASSWORD}           Bhinneka321
-${UNIT_BISNIS}        UB2 Requestor
 ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
 ${OPTYNAME}             dasdas
@@ -41,6 +39,10 @@ Create Transaction Admin Test
      ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_ADMIN}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}        ${SELECTALL}     ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
      ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}     ${SELECTALL}        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                    asdsadsad
      ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}              ${TEXTAREA}      ${SELECTALL}       ${ORDER_NAME}       Parent Child Address 1           ARM1                        ${PAYMENTMETHOD}                Parent Admin         0812312312312
+
+#     ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_ADMIN}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}        ${SELECTALL}     ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
+#     ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}     ${SELECTALL}        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                    asdsadsad
+#     ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}              ${TEXTAREA}      ${SELECTALL}       ${ORDER_NAME}       Parent Child Address 1           ARM1                        ${PAYMENTMETHOD}                Parent Admin         0812312312312
 
 *** Keywords ***
 

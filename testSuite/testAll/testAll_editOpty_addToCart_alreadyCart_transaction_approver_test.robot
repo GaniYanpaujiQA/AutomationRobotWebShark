@@ -19,8 +19,7 @@ ${EMAIL_REQUESTOR}    a.parentchildrequestor@grr.la
 #a.approver@grr.la
 ${EMAIL_APPROVER}     a.parentchildapprover@grr.la
 ${PASSWORD}           Bhinneka321
-${UNIT_BISNIS}        CHILDAPPROVER
-# UB1
+${UNIT_BISNIS}          childapprover
 ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
 ${OPTYNAME}            asdsss
@@ -30,8 +29,12 @@ Create Transaction Approver Test
     [Template]    Create Transaction Approver
     #SearchData           catatan trx                  email requestor                 password          unitBisnis              Opty name               Select drop list       textarea         email Approver
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     ${EMAIL_APPROVER}
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la
+    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       parentapprover          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}             ${SELECTALL}              ${TEXTAREA}     a.approver@grr.la
+#
+#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       CHILDAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     ${EMAIL_APPROVER}
+#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la
+#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}             ${SELECTALL}              ${TEXTAREA}     a.approver@grr.la
 
 
 *** Keywords ***

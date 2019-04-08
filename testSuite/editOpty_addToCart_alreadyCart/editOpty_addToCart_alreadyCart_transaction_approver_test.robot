@@ -1,4 +1,4 @@
-*** Settings ***
+``````````*** Settings ***
 Resource          ../../resources.robot
 Resource          ../../PageObject/login_pages.robot
 Resource          ../../PageObject/menu_pages.robot

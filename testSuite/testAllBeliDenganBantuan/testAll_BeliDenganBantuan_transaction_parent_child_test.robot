@@ -50,6 +50,7 @@ Create Transaction Parent Child Test
     #SearchData           catatan trx                  email requestor        password                   Select Company                 Select NPWP             Opty name           #Select drop list       textarea            ${UNIT_BISNIS}          Adrress                         Shipping Methode            Payment Methode                     Npwp                Phone Numb              EMAIL ADMIN
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}         ${UNIT_BISNIS}          ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}                     ${EMAIL_ADMIN}
 
+#${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}         ${UNIT_BISNIS}          ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}                     ${EMAIL_ADMIN}
 
 
 *** Keywords ***

@@ -19,11 +19,10 @@ ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentadmin@grr.la
 # ${EMAIL_APPROVER}     a.approver@grr.la       a.parentadmin@grr.la    a.parentchild@grr.la
 ${PASSWORD}           Bhinneka321
-${UNIT_BISNIS}        UB2 Requestor
 ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
 
-${PILIHPERUSAHAAN}          PT_TBK Parent Child
+${PILIHPERUSAHAAN}          PT_PERSERO Parent Child
 #PT_PERSERO Parent Child
 ${PILIHNPWP}            Parent Child (Child)
 ${OPTYNAME}             Opty Name New
@@ -32,7 +31,9 @@ Create Transaction Parent Child Test
     [Timeout]     15 minute
     [Template]    Create Transaction Parent Child
     #SearchData           catatan trx                  email requestor        password                   Select Company                 Select NPWP             Opty name           #Select drop list       textarea
+
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}
+# ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}
 
 
 

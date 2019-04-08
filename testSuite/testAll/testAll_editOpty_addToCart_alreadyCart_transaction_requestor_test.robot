@@ -18,7 +18,7 @@ ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentchildrequestor@grr.la
 # ${EMAIL_APPROVER}     a.approver@grr.la    a.parentrequestor@grr.la
 ${PASSWORD}           Bhinneka321
-${UNIT_BISNIS}        CHILDREQUESTOR
+${UNIT_BISNIS}        childrequestor
 # UB2 Requestor       PARENTREQUESTOR
 ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
@@ -29,8 +29,11 @@ Create Transaction Requestor Test
     [Teardown]    Close Browser
     #SearchData           catatan trx                  email requestor               password          unitBisnis          Opty name           Select drop list       textarea
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}            ${PASSWORD}       ${UNIT_BISNIS}      ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la      ${PASSWORD}       PARENTREQUESTOR     ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}
-    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la            ${PASSWORD}       UB2 REQUESTOR       ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}
+    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la      ${PASSWORD}       Parentrequestor     ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}
+    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la            ${PASSWORD}       UB2 Requestor       ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}
+#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}            ${PASSWORD}       ${UNIT_BISNIS}      ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}
+#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la      ${PASSWORD}       PARENTREQUESTOR     ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}
+#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la            ${PASSWORD}       UB2 REQUESTOR       ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}
 
 
 *** Keywords ***

@@ -42,7 +42,10 @@ Create Transaction Approver Test
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     ${EMAIL_APPROVER}                        ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}              ${PHONE}
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la                   ${ORDER_NAME}        Parent Admin Address 1         ARM1                        ${PAYMENTMETHOD}                    -                   wsdasd
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}             ${SELECTALL}              ${TEXTAREA}     a.approver@grr.la                        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                  asdsadsad
-
+#
+# ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     ${EMAIL_APPROVER}                        ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}              ${PHONE}
+#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la                   ${ORDER_NAME}        Parent Admin Address 1         ARM1                        ${PAYMENTMETHOD}                    -                   wsdasd
+#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}             ${SELECTALL}              ${TEXTAREA}     a.approver@grr.la                        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                  asdsadsad
 
 *** Keywords ***
 Create Transaction Approver

@@ -13,7 +13,7 @@ ${PATHSCREENSHOT}           ../screenshot/
 ${ENV}                      DEVELOPMENT
 #DEVELOPMENT
 #STAGING
-${HIDE_BROWSER}             HIDE
+${HIDE_BROWSER}             SHOW
 #HIDE
 #SHOW
 *** Keywords ***
@@ -66,7 +66,8 @@ Screenshot
   # Picture-${Date}.${TYPE OF FILE}
 
 Data Element Development
-   Log To Console                       Env = Development
+   Set Global Variable                  ${ENV}                              Development
+   Log To Console                       ${ENV}
    Set Global Variable                  ${MAIN_PAGE}                        http://shark-cf-development.bhinnekalocal.com
    Set Global Variable                  ${MAIN_PAGE_CMS}                    http://development.shark.bhinneka.com
    Set Global Variable                  ${URL_API}                          http://dev.bhinnekalocal.com/shark-backend/
@@ -74,7 +75,8 @@ Data Element Development
    Set Global Variable                  ${TAB_SEMUAPESANAN}                 //a[@href='http://shark-cf-development.bhinnekalocal.com/account/transaction']
 
 Data Element STAGING
-   Log To Console                       Env = Staging
+   Set Global Variable                  ${ENV}                              Staging
+   Log To Console                       ${ENV}
    Set Global Variable                  ${MAIN_PAGE}                        http://shark-cf-staging.bhinnekalocal.com/
    Set Global Variable                  ${MAIN_PAGE_CMS}                    http://staging.shark.bhinneka.com/
    Set Global Variable                  ${URL_API}                          http://staging.bhinnekalocal.com/shark-backend/

@@ -18,7 +18,6 @@ ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentadmin@grr.la
 # ${EMAIL_APPROVER}     a.approver@grr.la
 ${PASSWORD}           Bhinneka321
-${UNIT_BISNIS}        UB2 Requestor
 ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
 ${OPTYNAME}             dasdas
@@ -30,6 +29,10 @@ Create Transaction Admin Test
      ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
      ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
      ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
+
+#    ${SEARCHDATA}         ${CATATANTRANSAKSI}        ${EMAIL_REQUESTOR}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
+#     ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
+#     ${SEARCHDATA}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}         ${SELECTALL}
 
 *** Keywords ***
 

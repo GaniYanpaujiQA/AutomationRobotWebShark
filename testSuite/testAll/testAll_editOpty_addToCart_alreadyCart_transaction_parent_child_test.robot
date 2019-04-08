@@ -23,7 +23,7 @@ ${UNIT_BISNIS}        UB2 Requestor
 ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
 
-${PILIHPERUSAHAAN}          PT_TBK Parent Child
+${PILIHPERUSAHAAN}          PT_PERSERO Parent Child
 #PT_PERSERO Parent Child
 ${PILIHNPWP}            Parent Child (Child)
 ${OPTYNAME}             Opty Name New
@@ -34,6 +34,7 @@ Create Transaction Parent Child Test
     [Teardown]    Close Browser
     #SearchData           catatan trx                  email requestor        password                   Select Company                 Select NPWP             Opty name           #Select drop list       textarea
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}
+#    ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}      ${PASSWORD}               ${PILIHPERUSAHAAN}              ${PILIHNPWP}            ${OPTYNAME}         ${SELECTALL}            ${TEXTAREA}
 
 
 

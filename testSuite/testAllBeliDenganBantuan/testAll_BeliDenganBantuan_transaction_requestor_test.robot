@@ -46,7 +46,12 @@ Create Transaction Requestor Test
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}             ${PASSWORD}        ${UNIT_BISNIS}        ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la       ${PASSWORD}        PARENTREQUESTOR       ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               Parent Admin Address 1          ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    -              wsdasd
     ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la             ${PASSWORD}        UB2 REQUESTOR         ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               Admin Default Address 1          ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    -              asdsadsad
-#
+
+#  ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}             ${PASSWORD}        ${UNIT_BISNIS}        ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
+ #    ${SEARCHDATA}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}             ${PASSWORD}        ${UNIT_BISNIS}        ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
+ #    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la       ${PASSWORD}        PARENTREQUESTOR       ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               Parent Admin Address 1          ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    -              wsdasd
+ #    ${SEARCHDATA}        ${CATATANTRANSAKSI}          a.requestor@grr.la             ${PASSWORD}        UB2 REQUESTOR         ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               Admin Default Address 1          ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    -              asdsadsad
+ ##
 
 *** Keywords ***
 Create Transaction Requestor
