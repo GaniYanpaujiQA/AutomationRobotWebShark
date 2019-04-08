@@ -14,6 +14,7 @@ Resource          ../../PageObject/daftartransaksi_bantuansales_pages.robot
 Resource          ../apiTest/getQuotationDetail_test.robot
 Resource          ../../PageObject/cms/requests_pages.robot
 Test Setup        SeleniumLibrary.Set Selenium Speed    0.3 s
+Suite Teardown      Close All Browsers
 # Test Setup        Open Main Page Using Chrome Browser
 
 *** Variables ***

@@ -12,6 +12,7 @@ Resource          ../../PageObject/cms/opportunities_pages.robot
 Resource          ../../PageObject/cms/quotation_pages.robot
 Resource          ../../PageObject/pengaturanAnakPerusahaan_pages.robot
 # Test Setup        Open Main Page Using Chrome Browser
+Suite Teardown      Close All Browsers
 
 *** Variables ***
 ${SEARCHDATA}         3320724191

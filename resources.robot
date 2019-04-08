@@ -10,7 +10,7 @@ Library     OperatingSystem
 ${BROWSER}  chrome
 ${TYPE OF FILE}  png
 ${PATHSCREENSHOT}           ../screenshot/
-${ENV}                      DEVELOPMENT
+${ENV}                      STAGING
 #DEVELOPMENT
 #STAGING
 ${HIDE_BROWSER}             SHOW
