@@ -70,7 +70,6 @@ Create Transaction Get Opty
       Klik Tab Bantuan Sales
       Get Request Number Bantuan Sales Tab
 
-
 Send Quotation From CMS
        [Arguments]             ${SELECTALL}         ${TEXTAREA}             ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
       Open Main Page CMS Using Chrome Browser

@@ -5,6 +5,7 @@ Library     Collections
 Library     RequestsLibrary
 Library     JSONLibrary
 Library     OperatingSystem
+Resource    variablesData.robot
 
 *** Variables ***
 ${BROWSER}  chrome
@@ -66,7 +67,8 @@ Screenshot
   # Picture-${Date}.${TYPE OF FILE}
 
 Data Element Development
-   Set Global Variable                  ${ENV}                              Development
+   Set Global Variable                  ${ENV}                              DEVELOPMENT
+   Get Data From Environment            ${ENV}
    Log To Console                       ${ENV}
    Set Global Variable                  ${MAIN_PAGE}                        http://shark-cf-development.bhinnekalocal.com
    Set Global Variable                  ${MAIN_PAGE_CMS}                    http://development.shark.bhinneka.com
@@ -75,7 +77,7 @@ Data Element Development
    Set Global Variable                  ${TAB_SEMUAPESANAN}                 //a[@href='http://shark-cf-development.bhinnekalocal.com/account/transaction']
 
 Data Element STAGING
-   Set Global Variable                  ${ENV}                              Staging
+   Get Data From Environment            ${ENV}
    Log To Console                       ${ENV}
    Set Global Variable                  ${MAIN_PAGE}                        http://shark-cf-staging.bhinnekalocal.com/
    Set Global Variable                  ${MAIN_PAGE_CMS}                    http://staging.shark.bhinneka.com/
