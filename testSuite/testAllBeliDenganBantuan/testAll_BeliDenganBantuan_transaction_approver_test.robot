@@ -24,13 +24,13 @@ ${EMAIL_REQUESTOR}    a.parentchildrequestor@grr.la
 #a.approver@grr.la
 ${EMAIL_APPROVER}     a.parentchildapprover@grr.la
 ${PASSWORD}           Bhinneka321
-${UNIT_BISNIS}        CHILDAPPROVER
+${UNIT_BISNIS}        childapprover
 # UB1
 ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
 ${OPTYNAME}            asdsss
 ${ORDER_NAME}           Order Name
-${PHONE}              0812312312312
+${PHONE}              asdsad
 ${ADDRESS}              Parent Child Address 1
 ${SHIPPINGMETHOD}       ARM1
 ${PAYMENTMETHOD}        CBD - Bank Transfer > Bank UOB
@@ -41,8 +41,8 @@ Create Transaction Approver Test
     [Template]    Create Transaction Approver
     #SearchData           catatan trx                  email requestor                 password          unitBisnis              Opty name               Select drop list       textarea         email Approver                           OrderName           Adrress                         Shipping Methode            Payment Methode                     Npwp                Phone Numb
     ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     ${EMAIL_APPROVER}                        ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}              ${PHONE}
-    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la                   ${ORDER_NAME}        Parent Admin Address 1         ARM1                        ${PAYMENTMETHOD}                    -                   wsdasd
-    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}             ${SELECTALL}              ${TEXTAREA}     a.approver@grr.la                        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                  asdsadsad
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       parentapprover          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la                   ${ORDER_NAME}        Parent Admin Address 1         ARM1                        ${PAYMENTMETHOD}                    -                   Rumah
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.requestor@grr.la               ${PASSWORD}       UB1                     ${OPTYNAME}             ${SELECTALL}              ${TEXTAREA}     a.approver@grr.la                        ${ORDER_NAME}       Organisasi A Address 1         ARM1                        ${PAYMENTMETHOD}                   -                  0812313123123
 #
 # ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}               ${PASSWORD}       ${UNIT_BISNIS}          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     ${EMAIL_APPROVER}                        ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}              ${PHONE}
 #    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la         ${PASSWORD}       PARENTAPPROVER          ${OPTYNAME}             ${SELECTALL}            ${TEXTAREA}     a.parentapprover@grr.la                   ${ORDER_NAME}        Parent Admin Address 1         ARM1                        ${PAYMENTMETHOD}                    -                   wsdasd
@@ -94,7 +94,7 @@ Send Quotation From CMS
       Select Phone From Opty Detail (Step 2)       ${PHONE}
       Select Shipping Note From Opty Detail (Step 2)    ${TEXTAREA}
       Add SKU To Cart From Opty Detail (Step 2)
-      Search By SKU from Pop Up Add SKU (Step 2)
+      Search By SKU from Pop Up Add SKU (Step 2)        ${SKU_NUMBER}
       Click Select SKU Button from Pop Up Add SKU (Step 2)
       Click Add To Cart Button from Pop Up Add SKU (Step 2)
       Click Save And Continue Button From Basic Info (Step 1)

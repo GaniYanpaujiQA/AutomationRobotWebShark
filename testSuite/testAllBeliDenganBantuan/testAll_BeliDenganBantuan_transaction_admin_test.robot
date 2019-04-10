@@ -13,7 +13,7 @@ Resource          ../../PageObject/cms/quotation_pages.robot
 Resource          ../../PageObject/daftartransaksi_bantuansales_pages.robot
 Resource          ../apiTest/getQuotationDetail_test.robot
 Resource          ../../PageObject/cms/requests_pages.robot
-Test Setup        SeleniumLibrary.Set Selenium Speed    0.3 s
+#Test Setup        SeleniumLibrary.Set Selenium Speed    0.3 s
 Suite Teardown      Close All Browsers
 # Test Setup        Open Main Page Using Chrome Browser
 
@@ -26,7 +26,7 @@ ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
 ${OPTYNAME}             dasdas
 ${ORDER_NAME}           Order Name
-${PHONE}              wsdasd
+${PHONE}              Rumah
 ${ADDRESS}              Parent Admin Address 1
 ${SHIPPINGMETHOD}       ARM1
 ${PAYMENTMETHOD}        CBD - Bank Transfer > Bank UOB
@@ -38,8 +38,8 @@ Create Transaction Admin Test
     [Template]    Create Transaction Admin
     #SearchData           catatan trx                  email requestor        password              Opty name                     Text Area        Select All       OrderName           Adrress                         Shipping Methode            Payment Methode                     Npwp                Phone Numb
      ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_ADMIN}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}        ${SELECTALL}     ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
-     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}     ${SELECTALL}        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                    asdsadsad
-     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}              ${TEXTAREA}      ${SELECTALL}       ${ORDER_NAME}       Parent Child Address 1           ARM1                        ${PAYMENTMETHOD}                Parent Admin         0812312312312
+#     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}     ${SELECTALL}        ${ORDER_NAME}       Organisasi A Address 1          ARM1                        ${PAYMENTMETHOD}                   -                    0812313123123
+#     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.parentchild@grr.la      ${PASSWORD}            ${OPTYNAME}              ${TEXTAREA}      ${SELECTALL}       ${ORDER_NAME}       Parent Child Address 1           ARM1                        ${PAYMENTMETHOD}                Parent Admin         asdsad
 
 #     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        ${EMAIL_ADMIN}      ${PASSWORD}            ${OPTYNAME}                ${TEXTAREA}        ${SELECTALL}     ${ORDER_NAME}       ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
 #     ${SKU_NUMBER}         ${CATATANTRANSAKSI}        a.admin@grr.la             ${PASSWORD}            ${OPTYNAME}             ${TEXTAREA}     ${SELECTALL}        ${ORDER_NAME}       Admin Default Address 1          ARM1                        ${PAYMENTMETHOD}                   -                    asdsadsad
@@ -88,7 +88,7 @@ Send Quotation From CMS
       Select Phone From Opty Detail (Step 2)       ${PHONE}
       Select Shipping Note From Opty Detail (Step 2)    ${TEXTAREA}
       Add SKU To Cart From Opty Detail (Step 2)
-      Search By SKU from Pop Up Add SKU (Step 2)
+      Search By SKU from Pop Up Add SKU (Step 2)        ${SKU_NUMBER}
       Click Select SKU Button from Pop Up Add SKU (Step 2)
       Click Add To Cart Button from Pop Up Add SKU (Step 2)
       Click Save And Continue Button From Basic Info (Step 1)

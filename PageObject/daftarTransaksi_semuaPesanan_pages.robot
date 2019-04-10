@@ -136,11 +136,13 @@ Input Nama Order Text Field From Pop Up Pembelian dengan bantuan Sales
 
 Input Pesan Untuk Sales Text Field From Pop Up Pembelian dengan bantuan Sales
     [Arguments]                 ${pesanSales}
-    Wait Until Element Is Visible     ${PESANUNTUKSALES_TEXTFIELD}
+    Sleep       2
+    Wait Until Element Is Visible     ${PESANUNTUKSALES_TEXTFIELD}                  timeout=20
     Input Text                        ${PESANUNTUKSALES_TEXTFIELD}           ${pesanSales}
 
 Click Submit Dengan Bantuan Button From Pop Up Pembelian dengan bantuan Sales
-    Wait Until Element Is Visible     ${SUBMIT_BUTTON_ASSIS}
+    Sleep       2
+    Wait Until Element Is Visible     ${SUBMIT_BUTTON_ASSIS}                  timeout=20
     Click Element                     ${SUBMIT_BUTTON_ASSIS}
 
 Select Department From Pop Up Pembelian dengan bantuan Sales

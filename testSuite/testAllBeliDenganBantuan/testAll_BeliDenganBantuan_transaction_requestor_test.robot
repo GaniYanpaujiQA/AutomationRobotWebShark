@@ -25,14 +25,14 @@ ${CATATANTRANSAKSI}   SADASDASasda
 ${EMAIL_REQUESTOR}    a.parentchildrequestor@grr.la
 # ${EMAIL_APPROVER}     a.approver@grr.la    a.parentrequestor@grr.la
 ${PASSWORD}           Bhinneka321
-${UNIT_BISNIS}        CHILDREQUESTOR
+${UNIT_BISNIS}        childrequestor
 # UB2 Requestor       PARENTREQUESTOR
 ${SELECTALL}          Select All
 ${TEXTAREA}           SADSAsadsaad asda asdsad
 ${OPTYNAME}           Opty Name
 
 ${ORDER_NAME}           Order Name
-${PHONE}                0812312312312
+${PHONE}                asdsad
 ${ADDRESS}              Parent Child Address 1
 ${SHIPPINGMETHOD}       ARM1
 ${PAYMENTMETHOD}        CBD - Bank Transfer > Bank UOB
@@ -43,16 +43,9 @@ Create Transaction Requestor Test
     [Template]    Create Transaction Requestor
     [Teardown]    Close Browser
     #SearchData           catatan trx                  email requestor               password           unitBisnis            Opty name           Select drop list       textarea                OrderName                   Adrress                         Shipping Methode            Payment Methode                     Npwp           Phone Numb
-    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}             ${PASSWORD}        ${UNIT_BISNIS}        ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
-    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}             ${PASSWORD}        ${UNIT_BISNIS}        ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
-    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la       ${PASSWORD}        PARENTREQUESTOR       ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               Parent Admin Address 1          ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    -              wsdasd
-    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.requestor@grr.la             ${PASSWORD}        UB2 REQUESTOR         ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               Admin Default Address 1          ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    -              asdsadsad
-
-#  ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}             ${PASSWORD}        ${UNIT_BISNIS}        ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
- #    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}             ${PASSWORD}        ${UNIT_BISNIS}        ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               ${ADDRESS}                      ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
- #    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la       ${PASSWORD}        PARENTREQUESTOR       ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               Parent Admin Address 1          ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    -              wsdasd
- #    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.requestor@grr.la             ${PASSWORD}        UB2 REQUESTOR         ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               Admin Default Address 1          ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    -              asdsadsad
- ##
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          ${EMAIL_REQUESTOR}             ${PASSWORD}       ${UNIT_BISNIS}        ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               ${ADDRESS}                   ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    ${NPWP}        ${PHONE}
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}          a.parentrequestor@grr.la       ${PASSWORD}       Parentrequestor       ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               Parent Admin Address 1          ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    -              Rumah
+    ${SKU_NUMBER}        ${CATATANTRANSAKSI}           a.requestor@grr.la             ${PASSWORD}      UB2 Requestor       ${OPTYNAME}         ${SELECTALL}           ${TEXTAREA}              ${ORDER_NAME}               Organisasi A Address 1         ${SHIPPINGMETHOD}           ${PAYMENTMETHOD}                    -              0812313123123
 
 *** Keywords ***
 Create Transaction Requestor
@@ -100,7 +93,7 @@ Send Quotation From CMS
       Select Phone From Opty Detail (Step 2)       ${PHONE}
       Select Shipping Note From Opty Detail (Step 2)    ${TEXTAREA}
       Add SKU To Cart From Opty Detail (Step 2)
-      Search By SKU from Pop Up Add SKU (Step 2)
+      Search By SKU from Pop Up Add SKU (Step 2)        ${SKU_NUMBER}
       Click Select SKU Button from Pop Up Add SKU (Step 2)
       Click Add To Cart Button from Pop Up Add SKU (Step 2)
       Click Save And Continue Button From Basic Info (Step 1)
